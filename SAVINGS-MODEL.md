@@ -67,4 +67,55 @@ Growth shielded at the full 40.8% ordinary rate. Illustrative: ~$25M inside per 
 - **PPLI funding pace × strategy return** drives the long-run number more than anything else.
 - **Index-paper portability**: the only remaining rate lever on the trading P&L itself.
 
+---
+
+# Maximum Proven Stack — full institutional execution
+
+> Every strategy below is statutory or court-tested. Three buckets — do not conflate them.
+
+## Bucket 1 — Against the $50M operating profit (annual income tax)
+
+| Strategy | Capital required | Firm saved/yr |
+|---|---|---|
+| TTS + §475 + full expense deduction (~$3M real costs) | — | ~$1.2M |
+| R&D credit (§41) on algo/infra dev | — | ~$0.5M |
+| 401(k) + cash-balance DB (~$400K/partner) | retirement assets | ~$0.65M *(deferral)* |
+| Oil & gas IDCs (~$10M/yr program) | **$10M/yr at real risk** | ~$3.3M |
+| Real estate + cost seg + bonus + STR (~$10M/yr) | **$10M/yr in property** | ~$1.1M |
+| Grantor CLAT (~$5M/yr; only if philanthropic) | charity stream | ~$2.0M |
+| Muni ladder on idle margin capital | — | ~$0.3–0.5M |
+
+- Without CLAT: **~$6.7M/yr firm (~$1.7M/partner) → effective 40.8% → ~27%**
+- With CLAT: **~$8.7M/yr → ~23–24%**
+- ⚠️ ~$4.4M of this requires deploying $20M/yr into real oil/gas/RE risk — investments with tax benefits, not free deductions. Without them: ~$2.4M/yr (~31% effective).
+
+## Bucket 2 — On reinvested wealth: PPLI/IDF compounding
+
+~$30M+/yr after-tax reinvested through PPLI instead of taxable accounts:
+
+| Stage | Inside (firmwide) | Saved vs taxable/yr |
+|---|---|---|
+| Year 2 | ~$40M | ~$2.4M |
+| Year 5 | ~$100M | **~$6.1M** (~$1.5M/partner) |
+| Year 10 | ~$250M+ | **~$15M+** (~$3.8M/partner), accelerating |
+
+Exits income-tax-free at death (and estate-tax-free if trust-owned).
+
+## Bucket 3 — Estate (largest single number, realized once)
+
+Dynasty trusts owning PPLI + zeroed-out GRATs + LP-interest gifts ($15M/person exemption):
+- Every **$100M moved outside the estate ≈ $40M estate tax avoided**.
+- 10-yr horizon at this accumulation rate: **$60–160M+ of terminal tax avoided**.
+
+## Combined trajectory (4 partners)
+
+| Horizon | Blended effective income-tax rate | Saved vs unstructured |
+|---|---|---|
+| Year 1 | ~27% | ~$7M firm |
+| Year 5 | ~22–24% | ~$13M/yr (~$3.2M/partner) |
+| Year 10 | ~18–20% | ~$21M+/yr (~$5M+/partner) |
+| 10-yr cumulative | — | **~$130–180M income tax + $60M+ estate tax** |
+
+**The legal floor:** ~18–20% blended is roughly where proven-legal ends for US citizens with ordinary trading income. Everything below it in the historical record — basket options ($7B RenTec settlement), micro-captives, offshore deferral, syndicated easements — is litigated, listed, or dead.
+
 See [PLAN.md](PLAN.md) for structure detail; [SUMMARY-CAVEMAN.md](SUMMARY-CAVEMAN.md) for the simple version.
