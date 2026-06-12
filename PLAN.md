@@ -1,6 +1,6 @@
 # Tax Structure Plan — Multi-Partner Active Trading Operating Entity
 
-> **Scope:** $50M+/year trading profits · US-citizen partners · domiciled in no-income-tax states (FL/TX/WY/NV/TN/SD/WA/AK/NH) · **greenfield (no entity yet — sole/individual accounts today)** · **options-dominant book (index + single-name)**.
+> **Scope:** $50M+/year trading profits · US-citizen partners · domiciled in no-income-tax states (FL/TX/WY/NV/TN/SD/WA/AK/NH) · **greenfield (no entity yet — sole/individual accounts today)** · **100% single-name (ticker) options, high-frequency** — these are *securities*, NOT §1256, so the core book is ordinary-rate (~40.8%); **§475(f) is mandatory protection** and **PPLI is the primary rate lever**.
 >
 > **IMPORTANT — read first:** This is an *educational structuring design*, not legal or tax advice, and not a substitute for engagement. Tax *mitigation/avoidance* (using the Code as written) is legal; *evasion* is not — every element below is a mainstream, defensible planning tool, but each carries doctrine-level guardrails (economic substance §7701(o), investor-control doctrine, reasonable compensation, §817(h) diversification) that a licensed **tax attorney + CPA** must implement. Elections here have **hard, unforgiving deadlines**. Do not self-execute.
 
@@ -25,12 +25,11 @@ Because the partners already live in zero-tax states, **state planning is effect
 - Holds capital, executes all trades, claims **Trader Tax Status (TTS)** (facts-and-circumstances: substantial, frequent, regular, continuous; multiple active partners strengthens the "business" narrative).
 - **Greenfield advantage:** because nothing is formed yet, we form clean entities and capture the **§475(f) election within the 75-day internal-resolution window** (dated internal resolution, no IRS filing) — no transition mess, no pre-existing wash-sale baggage, free choice of WY/DE/NV domicile. (An *existing* entity would instead face the brutal **March 15** deadline.)
 
-**Options-specific election strategy (the single largest lever here):**
-- **Split the book by tax character, not by economics:**
-  - **Broad-based *index* options (SPX, NDX, RUT, VIX, etc.) = §1256 contracts** → automatic **60/40** (~26–27% blended top rate), marked to market by statute. **Leave these OUT of §475** to preserve 60/40.
-  - **Single-name and narrow-based equity options = securities** → elect **§475(f) MTM** on this sleeve (ordinary, **no wash-sale rule**, **uncapped ordinary losses**). At $50M+ the rate downside of 475 is moot; the wash-sale/loss-cap relief is pure upside.
-- **The instrument-selection arbitrage:** `SPY/QQQ/IWM` options are **equity options (NOT §1256)**; `SPX/NDX/RUT` options on the *index itself* **ARE §1256**. Same exposure, ~10-point rate gap. **Deliberately routing index-option volume through the §1256 instrument is a multi-million-dollar, zero-structure lever at this scale.** Confirm broad-based classification per instrument with counsel.
-- **Net result:** a §1256 sleeve at ~26–27% + a §475 ordinary sleeve with full loss/wash-sale relief — the best blended outcome available without exotic structure.
+**Single-name HFT options election strategy:**
+- **Ticker-symbol options are *securities*, not §1256** — no 60/40 treatment available on the core book. It is taxed at ordinary rates (~40.8% top, incl. NIIT).
+- **§475(f) MTM is therefore MANDATORY, not optional** — high-frequency single-name options without 475 is a wash-sale catastrophe: thousands of overlapping trades in substantially-identical strikes/expiries defer losses and generate **phantom taxable income** that can exceed economic profit. 475 makes everything clean MTM ordinary, with **uncapped ordinary losses**. This is large-dollar *protection*, but not a rate reduction.
+- **§1256 routing survives only as an upside option:** if any sub-strategy's edge ports to broad-based index paper (SPX/XSP/NDX — these ARE §1256, while SPY/QQQ/single-names are not), each 10% of P&L moved saves ~10.2 rate points (~$510K/yr per 10% at $50M). But **never trade alpha for tax** — if the edge is ticker-specific, it doesn't port, and forcing it costs more than it saves.
+- **Consequence for the rest of the plan:** with the core P&L locked at ordinary rates, **PPLI (Layer 3) and substance-based deduction generators (Layer 5) are the primary rate levers**, and OZ rollovers are unavailable (475 gains are ordinary, not capital).
 
 **Entity B — Management company: S-corp.**
 - Charges the Trading LP an **administrative/management fee** → this *is* earned income, which creates the base to fund retirement plans and deduct health insurance.
@@ -68,7 +67,7 @@ This is what actually moves the needle on a high-churn ordinary-income strategy:
 - **§6418 transferable energy credits** — buy at ~88–94¢/$; honest flag: passive-activity credit rules largely limit individuals to offsetting passive income → poor fit for partners directly; better inside a C-corp. Completeness item only.
 
 **Character & timing (post-OBBBA updates):**
-- **OZ 2.0** — OZs now **permanent**; rolling 5-yr deferral + 10% basis step-up (30% rural) for post-2026 investments; 10-yr tax-free appreciation retained. **The §1256 index-option sleeve produces eligible *capital* gains** — it can feed OZ rollovers (the §475 ordinary sleeve cannot). Upgrades the earlier "largely N/A" verdict to "viable for the 1256 sleeve."
+- **OZ 2.0** — OZs now **permanent**; rolling 5-yr deferral + 10% basis step-up (30% rural) for post-2026 investments; 10-yr tax-free appreciation retained. **With a 100% single-name §475 book, trading gains are ordinary → NOT OZ-eligible.** Only relevant if a §1256 index sleeve develops or for capital gains arising outside the trading book.
 - **Municipal bond ladder** on idle treasury/margin cash — tax-exempt float.
 - **Mega-backdoor Roth** in the S-corp 401(k) + Roth conversions in drawdown years.
 
@@ -100,10 +99,10 @@ This is what actually moves the needle on a high-churn ordinary-income strategy:
 ## Open variables
 **Resolved:**
 - ✅ **Entity classification:** greenfield (nothing formed) → clean formation + 75-day §475 window.
-- ✅ **Asset class:** options-dominant → split into §1256 index-option sleeve (60/40) + §475 single-name/equity-option sleeve.
+- ✅ **Asset class:** **100% single-name (ticker) options, high-frequency** → securities book, §475(f) mandatory, ordinary rates on core P&L; PPLI + Layer 5 are the rate levers. §1256 routing only if a sub-strategy's edge ports to index paper without alpha loss.
 
 **Still to confirm (to finalize):**
-1. **Index vs. single-name split %** — what share of volume is in *broad-based index* options (§1256) vs. single-name? Drives how much income lands at ~27% vs. ordinary, and whether the SPX-vs-SPY routing optimization is worth operationalizing. (At options scale this is the biggest dollar question.)
+1. **Portability check** — can ANY sub-strategy express in broad-based index paper (SPX/XSP/NDX) without losing edge? Each 10% of P&L ported ≈ ~$510K/yr permanent savings firmwide.
 2. **Own capital vs. outside money** — *Assumed proprietary (own capital).* If outside investors are involved, this becomes a **fund** (GP/LP, carried interest under §1061 3-year rule, RIA registration, fund admin) — a materially different build.
 3. **Insurability** — are key partners insurable enough for **PPLI**, or is **PPVA** the fallback? Drives Layer 3.
 4. **Charitable intent** — philanthropy genuinely desired, or is Layer 4 purely a tax tool? Determines CRT/foundation scope.

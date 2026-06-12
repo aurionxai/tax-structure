@@ -12,15 +12,16 @@
 - **Company 1** does the trading. Money flows straight to partners. No double tax.
 - **Company 2** gets paid a fee for "running things." This fee unlocks retirement accounts.
 
-**2. Trade the right paper. (Biggest free money.)**
-- Trade **SPX** options, not SPY options. Same bet, but tax is **~27% instead of ~40%**.
-- For everything else, file one paper (the "475 election") so losses always count fully and a dumb rule called "wash sale" goes away.
+**2. File the magic paper (the "475 election"). Not optional.**
+- Your trading is fast single-stock options. Without this paper, a dumb rule called "wash sale" can make you owe tax on money you never made. Very bad.
+- With the paper: losses always count, wash-sale rule gone, books clean.
 - ⏰ Must file within **75 days** of making the company. Miss it = wait a whole year.
+- Bad news, said honest: single-stock options get the **full ~40% rate**. No trick changes that. Only index options (SPX kind) get the cheap ~27% rate — if some bets can move there *without hurting profits*, move them. Never hurt the edge to save tax.
 
 **3. Stuff retirement accounts.**
 - 401(k) + a big pension plan = a few hundred grand per partner, tax-deferred each year. Nice, but small next to $50M.
 
-**4. The big one: special life insurance (PPLI).**
+**4. The big one: special life insurance (PPLI). Since the rate can't drop, this is the main weapon.**
 - Put a chunk of money inside a special insurance wrapper.
 - Money grows inside **tax-free**. You borrow it out **tax-free**. Kids get it **tax-free** when you die.
 - Rule: *you* can't drive the trades inside it. Someone independent must. Break that rule, lose everything.
