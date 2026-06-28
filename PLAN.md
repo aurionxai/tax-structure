@@ -31,9 +31,12 @@ Because the partners already live in zero-tax states, **state planning is effect
 - **§1256 routing survives only as an upside option:** if any sub-strategy's edge ports to broad-based index paper (SPX/XSP/NDX — these ARE §1256, while SPY/QQQ/single-names are not), each 10% of P&L moved saves ~10.2 rate points (~$510K/yr per 10% at $50M). But **never trade alpha for tax** — if the edge is ticker-specific, it doesn't port, and forcing it costs more than it saves.
 - **Consequence for the rest of the plan:** with the core P&L locked at ordinary rates, **PPLI (Layer 3) and substance-based deduction generators (Layer 5) are the primary rate levers**, and OZ rollovers are unavailable (475 gains are ordinary, not capital).
 
-**Entity B — Management company: S-corp.**
-- Charges the Trading LP an **administrative/management fee** → this *is* earned income, which creates the base to fund retirement plans and deduct health insurance.
-- Reasonable-comp split (W-2 salary vs. distributions) managed for payroll efficiency.
+**Entity B — Management company: S-corp (one per partner, or shared).**
+- Each partner can form their own S-corp that receives their share of the management fee — cleaner for independent retirement plans and salary splits.
+- The S-corp charges the Trading LP a management fee → that fee IS earned income, creating the base for retirement plans and health insurance deductions.
+- **W-2 requirement (IRS's most-audited S-corp rule):** active owner-employees MUST pay themselves "reasonable compensation" as W-2 before taking distributions. All-distribution is a hard audit target; the IRS recharacterizes and assesses back payroll taxes + penalties (*Watson v. Commissioner*). Typical defensible range: **$150K–$400K/yr W-2** depending on role; everything above that as distributions (no payroll tax on distributions).
+- **The Trading LP K-1 is separate:** the bulk of the $50M flows as K-1 income directly to partners — NO W-2 required, NO SE tax. The W-2 rule only applies to the management fee income inside the S-corp.
+- **The Trading LP needs zero employees.** Partners are owners; TTS qualification is about trading activity, not headcount.
 
 ### Layer 2 — Qualified deferral (good, but small relative to $50M)
 
