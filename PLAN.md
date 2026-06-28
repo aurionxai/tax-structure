@@ -31,18 +31,34 @@ Because the partners already live in zero-tax states, **state planning is effect
 - **§1256 routing survives only as an upside option:** if any sub-strategy's edge ports to broad-based index paper (SPX/XSP/NDX — these ARE §1256, while SPY/QQQ/single-names are not), each 10% of P&L moved saves ~10.2 rate points (~$510K/yr per 10% at $50M). But **never trade alpha for tax** — if the edge is ticker-specific, it doesn't port, and forcing it costs more than it saves.
 - **Consequence for the rest of the plan:** with the core P&L locked at ordinary rates, **PPLI (Layer 3) and substance-based deduction generators (Layer 5) are the primary rate levers**, and OZ rollovers are unavailable (475 gains are ordinary, not capital).
 
-**Entity B — Management company: S-corp (one per partner, or shared).**
-- Each partner can form their own S-corp that receives their share of the management fee — cleaner for independent retirement plans and salary splits.
-- The S-corp charges the Trading LP a management fee → that fee IS earned income, creating the base for retirement plans and health insurance deductions.
-- **W-2 requirement (IRS's most-audited S-corp rule):** active owner-employees MUST pay themselves "reasonable compensation" as W-2 before taking distributions. All-distribution is a hard audit target; the IRS recharacterizes and assesses back payroll taxes + penalties (*Watson v. Commissioner*). Typical defensible range: **$150K–$400K/yr W-2** depending on role; everything above that as distributions (no payroll tax on distributions).
-- **The Trading LP K-1 is separate:** the bulk of the $50M flows as K-1 income directly to partners — NO W-2 required, NO SE tax. The W-2 rule only applies to the management fee income inside the S-corp.
-- **The Trading LP needs zero employees.** Partners are owners; TTS qualification is about trading activity, not headcount.
+**Entity B — Solo S-corp per partner (each partner owns and operates independently).**
+- Each partner forms their **own S-corp** — sole owner, sole operator, full solopreneur treatment. No shared entity for management; each S-corp is independent.
+- Each S-corp charges the Trading LP its own management fee → earned income base for retirement plans, health insurance, and deductions.
+- Each partner is fully responsible for their own S-corp's payroll, filings, retirement plans, and compliance — independent of other partners.
+- **W-2 requirement:** MUST pay a reasonable W-2 salary before distributions (*Watson v. Commissioner*). Typical defensible range: **$150–200K minimum** (enough to support the retirement contribution math; higher if role warrants). Everything above salary = distributions, no payroll tax.
+- **The Trading LP K-1 is separate:** the bulk of the $50M flows as K-1 — NO W-2, NO SE tax. W-2 rule only touches the management fee slice inside the S-corp.
+- **The Trading LP needs zero employees.** TTS qualification is about trading activity, not headcount.
+- **Documentation critical for solo setup:** the S-corp must have genuine, documented services provided to the Trading LP — research, risk management, administrative oversight. Solo setup with thin documentation is the most common solo-trader audit trigger.
 
-### Layer 2 — Qualified deferral (good, but small relative to $50M)
+### Layer 2 — Solo S-corp retirement stack (the solopreneur advantage)
 
-Funded through Entity B's earned income:
-- **Solo/employer 401(k)** per active partner.
-- **Cash-balance / defined-benefit plan** layered on top — at these income levels can shelter **~$200K–$300K+ per partner per year** depending on age. Meaningful absolute dollars, but a rounding error against $50M — necessary, not sufficient.
+Because each S-corp has a single participant, the cash-balance plan is sized purely around that partner's age — no dilution across multiple participants. This is the solopreneur retirement edge.
+
+**Per-partner annual shelter (age-dependent):**
+
+| Age | Cash-balance/DB | 401(k) elective | Mega backdoor Roth | Backdoor Roth IRA | Total shelter |
+|-----|----------------|-----------------|-------------------|-------------------|---------------|
+| 40  | ~$100K         | $23,500         | ~$46,500          | $7,000            | ~$177K        |
+| 50  | ~$175K         | $31,000         | ~$46,500          | $8,000            | ~$260K        |
+| 55  | ~$220K         | $31,000         | ~$46,500          | $8,000            | ~$305K        |
+| 60+ | ~$280K+        | $34,750         | ~$46,500          | $8,000            | ~$369K+       |
+
+**Key rules:**
+- **Cash-balance/DB:** pre-tax deferral, NOT Roth. Grows tax-deferred, taxed on withdrawal. Contributions are % of W-2 comp — the $150–200K+ salary must be set high enough to support the math.
+- **Mega backdoor Roth:** after-tax 401(k) contributions up to the §415 DC limit (~$70K total), immediately converted to Roth. The Roth portion is ~$46,500 (§415 limit minus elective deferral; less if S-corp pays employer match).
+- **Backdoor Roth IRA:** $7K–$8K/yr (age 50+) — contribute to traditional IRA, immediately convert. Separate from the 401(k) stack.
+- **What $165K+ actually means:** total retirement deferral space (cash-balance + 401(k)) can exceed $165K, but **only the ~$46–54K after-tax/Roth portion goes into Roth**. The rest is pre-tax. Both are worth doing — different tools.
+- Health insurance premiums deductible through the S-corp.
 
 ### Layer 3 — The centerpiece: tax-free inside buildup via insurance wrapper
 
