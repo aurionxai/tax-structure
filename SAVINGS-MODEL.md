@@ -31,9 +31,20 @@ Plus an unpriced hazard: without §475, HFT in overlapping strikes/expiries trig
 |---|---|---|
 | TTS business-expense deductions (~$2M real costs: data, infra, comp) | ~$0.8M | ~$200K |
 | R&D credit (§41) — HFT algo/infra dev; OBBBA restored immediate domestic R&D expensing | ~$0.4–0.6M | ~$100–150K |
+| **IP LLC royalty — LP-level deduction** *(see mechanics note below)* | **~$0.5–0.6M net** | **~$125–153K (non-creator partners)** |
 | Annual gift exclusion ($19K/person/yr — zero structure, start day one) | *(wealth transfer, not income tax)* | ~$152K+/yr per partner moved estate-tax-free |
-| **Subtotal — base structure (Year 1)** | **~$1.2–1.4M** | **~$300–350K** |
+| **Subtotal — base structure (Year 1)** | **~$1.7–2.0M** | **~$425–500K (non-creator) / creator: income shifted to IP LLC** |
 | NIIT/TTS exemption *(~30% probability; upside only — do not include in base plan)* | *+$1.9M if sustained* | *+$475K if sustained* |
+
+**IP LLC royalty — mechanics:**
+The Trading LP pays a royalty to the creator's IP LLC for the algorithm license. This is a **deduction at the LP level** — it reduces every partner's K-1 income by royalty ÷ 4 regardless of who created the IP.
+
+At a $1.5M/yr royalty:
+- Each partner's K-1 is reduced by $375K → each non-creator partner saves **~$153K/yr** in income tax (at 40.8%)
+- 3 non-creator partners: **~$459K/yr net income tax saving**
+- Creator: K-1 also reduced by $375K (saves $153K at LP level) but receives the full $1.5M royalty in IP LLC — similar gross tax at ordinary rates, but creator controls timing, can fund a retirement plan from royalty income through the IP LLC/S-corp stack, and if the IP LLC is owned by a dynasty trust the royalty accumulates outside the estate
+- **Net firm income tax saving to non-creators: ~$0.5M/yr.** Creator's benefit is structural (income control + estate efficiency), not a rate reduction.
+- Royalty must be arm's-length and documented. A written economic analysis is required in the file.
 
 > **Year-1 base rate of ~38% requires specific actions:** expenses + R&D credit alone get to ~40%. To reach ~38%, the S-corp deduction stack (accountable plan, Augusta Rule, health insurance, CB plan) must be fully operational in year one. To reach ~27–31% in year one, O&G or real estate deployments requiring **$5–10M of capital at real investment risk** must be made. Model the base case at ~39–40% until those deployments are confirmed.
 
@@ -96,15 +107,17 @@ Growth shielded at the full 40.8% ordinary rate. Illustrative: ~$25M inside per 
 |---|---|---|
 | TTS + §475 + full expense deduction (~$3M real costs) | — | ~$1.2M |
 | R&D credit (§41) on algo/infra dev | — | ~$0.5M |
+| **IP LLC royalty (~$1.5M/yr LP deduction)** | royalty negotiated | **~$0.5M net** *(non-creator partners save ~$153K each; creator shifts income to IP LLC)* |
 | 401(k) + cash-balance DB (~$400K/partner) | retirement assets | ~$0.65M *(deferral)* |
 | Oil & gas IDCs (~$10M/yr program) | **$10M/yr at real risk** | ~$3.3M |
 | Real estate + cost seg + bonus + STR (~$10M/yr) | **$10M/yr in property** | ~$1.1M |
 | Grantor CLAT (~$5M/yr; only if philanthropic) | charity stream | ~$2.0M |
 | Muni ladder on idle margin capital | — | ~$0.3–0.5M |
 
-- Without CLAT: **~$6.7M/yr firm (~$1.7M/partner) → effective 40.8% → ~27%**
-- With CLAT: **~$8.7M/yr → ~23–24%**
-- ⚠️ ~$4.4M of this requires deploying $20M/yr into real oil/gas/RE risk — investments with tax benefits, not free deductions. Without them: ~$2.4M/yr (~31% effective).
+- Without CLAT: **~$7.2M/yr firm (~$1.8M/partner) → effective 40.8% → ~26%**
+- With CLAT: **~$9.2M/yr → ~22–23%**
+- ⚠️ ~$4.4M of this requires deploying $20M/yr into real oil/gas/RE risk — investments with tax benefits, not free deductions. Without them: ~$2.9M/yr (~34% → ~29% effective).
+- IP LLC royalty adds ~$0.5M net without any capital deployment — the royalty is a structural feature of the entity architecture, not an investment.
 
 ## Bucket 2 — On reinvested wealth: PPLI/IDF compounding
 
