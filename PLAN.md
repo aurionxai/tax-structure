@@ -71,7 +71,7 @@ This is what actually moves the needle on a high-churn ordinary-income strategy:
 - **Municipal bond ladder** on idle treasury/margin cash — tax-exempt float.
 - **Mega-backdoor Roth** in the S-corp 401(k) — after-tax contributions up to the §415 total limit (~$70K/2026), immediately converted to Roth; ~$46K extra Roth space per partner per year beyond the elective deferral. Grows and exits tax-free. Small vs. $50M but free to execute.
 - **Roth conversions** in low-income years (drawdown, loss years, early retirement).
-- **Custodial / kids' Roth IRAs** — employ minor children legitimately through Company B (real work, reasonable pay); pay up to the standard deduction (~$15K, zero income tax owed); contribute up to $7K/child/yr into a Roth. Requires: genuine documented work, arm's-length compensation only. 50–60 year tax-free compounding horizon; not a current-year tax number, a legacy number. *Note: kids cannot contribute from trading P&L (not earned income) — must be W-2 from the S-corp.*
+- **Custodial / kids' Roth IRAs** — employ minor children legitimately through Company B (real work, reasonable pay); pay up to the standard deduction (~$15K, zero income tax owed); the **parent can write the $7K check** into the custodial Roth on the child's behalf — the IRS doesn't care who funds it, only that the child has sufficient W-2 earned income to cover the contribution (limit = lesser of $7K or child's earned income). Zero W-2 = zero Roth, regardless of parent deposit. Requires genuine documented work and arm's-length compensation. 50–60 year tax-free compounding horizon.
 
 **Income-shifting & charitable add-ons:**
 - **Grantor CLAT** — large upfront charitable deduction vs. current ordinary income; remainder to family at low gift cost.
