@@ -278,6 +278,7 @@ hr{border:none;border-top:1px solid #2e2822;margin:48px 0}
       <li>S-corp Form 2553 missed = entity taxed as C-corp or default LLC for the entire year. Retroactive fixes exist but are expensive and not guaranteed.</li>
       <li>PPLI funded before investor-control structure is verified = retroactive ordinary income + penalties on the entire policy value.</li>
       <li>Cash-balance plan not adopted by December 31 = zero CB contribution allowed for that year. Age-based catch-up gone.</li>
+      <li>IP assignment agreement not executed before trading begins = algorithm is personally owned by the creator with no asset protection and sitting in their taxable estate. Once the IP has appreciated alongside trading profits, assigning it out triggers a taxable gift at appreciated value. Do it at formation when the value is near zero.</li>
     </ul>
   </div>
 
@@ -293,10 +294,21 @@ hr{border:none;border-top:1px solid #2e2822;margin:48px 0}
         <div class="item-bar"></div>
         <div class="item-body">
           <div class="item-head">
-            <div class="item-name">Form the Trading LP and all four S-corps</div>
+            <div class="item-name">Form the Trading LP, all four S-corps, and the IP LLC</div>
             <div class="item-dead dead-red">Day 0</div>
           </div>
-          <div class="item-desc">Capital lives in the LP. Trading happens in the LP. Brokerage account is in the LP's name. Personal accounts are for personal money — not trading the same instruments. No exceptions after this point.</div>
+          <div class="item-desc">Capital lives in the LP. Trading happens in the LP. The IP LLC is the creator's separate entity — formed simultaneously, not later. All three entity types must exist before the first trade: Trading LP, each partner's S-corp, and the creator's IP LLC (or trust → IP LLC). Forming the IP LLC after trading begins means the algorithm has already appreciated inside the creator's personal estate.</div>
+        </div>
+      </div>
+
+      <div class="item item-red">
+        <div class="item-bar"></div>
+        <div class="item-body">
+          <div class="item-head">
+            <div class="item-name">IP assignment agreement — transfer algorithm to IP LLC before first trade</div>
+            <div class="item-dead dead-red">Day 0</div>
+          </div>
+          <div class="item-desc">The creator assigns all pre-formation IP (the algorithm, codebase, models, research) from themselves personally to the IP LLC via a written IP assignment agreement. This is a formal legal document — not a verbal understanding. It establishes clean IP ownership at near-zero value (before any trading profits are attached to it). <span class="flag">Waiting until after trading begins means assigning appreciated IP — triggering a taxable gift event and defeating most of the asset protection benefit.</span> The attorney drafts this on formation day alongside the LP agreement.</div>
         </div>
       </div>
 
@@ -343,6 +355,17 @@ hr{border:none;border-top:1px solid #2e2822;margin:48px 0}
       <div class="phase-title">Within 75 Days of Entity Formation — Hard Deadline</div>
     </div>
     <div class="items">
+
+      <div class="item item-ochre">
+        <div class="item-bar"></div>
+        <div class="item-body">
+          <div class="item-head">
+            <div class="item-name">License agreement — IP LLC to Trading LP, signed before first royalty payment</div>
+            <div class="item-dead dead-ochre">Before first fee</div>
+          </div>
+          <div class="item-desc">The IP LLC licenses the algorithm to the Trading LP under a written agreement covering: (a) scope — exclusive, limited to trading the firm's own capital; (b) royalty rate — arm's length, documentable against what an unrelated firm would pay; (c) improvements clause — who owns future algorithm enhancements funded by the LP; (d) what happens if the creator partner exits. The LP agreement must also explicitly acknowledge the license as a legitimate LP expense. <strong>No license agreement = no deduction for the LP and no legal basis for the royalty payment.</strong> The attorney drafts this alongside the LP agreement — same day, same engagement.</div>
+        </div>
+      </div>
 
       <div class="item item-ochre">
         <div class="item-bar"></div>

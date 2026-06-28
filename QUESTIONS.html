@@ -279,10 +279,51 @@ hr{border:none;border-top:1px solid #2e2822;margin:48px 0}
     </div>
   </div>
 
-  <!-- SECTION 3: TTS AT PARTNER LEVEL -->
+  <!-- SECTION 3: IP STRUCTURE -->
   <div class="section">
     <div class="section-head">
       <div class="section-num">3</div>
+      <div class="section-title">IP Ownership Structure<span class="sub">Algorithm ownership and trading revenue are separate legal relationships</span></div>
+    </div>
+    <div class="q-list">
+
+      <div class="q red">
+        <div class="q-text">How do you structure the IP assignment so the algorithm is cleanly owned by the creator's entity before the first trade — and what happens if we wait until after trading begins?</div>
+        <div class="q-why"><span class="flag">TIMING IS EVERYTHING.</span> The IP assignment must happen at formation when the algorithm's value is near zero. Once trading begins and the algorithm has generated (or is clearly capable of generating) $50M+ in annual profits, assigning it out of the creator's personal name triggers a taxable gift at the appreciated value. The attorney must draft the IP assignment agreement on day one alongside the LP agreement — same engagement, same signing date.</div>
+      </div>
+
+      <div class="q red">
+        <div class="q-text">What must the license agreement between the IP LLC and the Trading LP cover, and how do you establish a defensible arm's-length royalty rate?</div>
+        <div class="q-why"><span class="flag">NO AGREEMENT = NO DEDUCTION.</span> The license agreement is the legal basis for the LP's royalty deduction. Without a written, arm's-length agreement the IRS treats the royalty as a disguised distribution — not deductible. The agreement must cover: scope of license, royalty rate or fee, term, improvements clause, and exit provisions. The royalty rate must be supportable as what an unrelated HFT firm would pay to license a comparably performing algorithm. At $50M+ annual profits, a meaningful royalty is easy to defend — document the economic rationale and keep it in the file.</div>
+      </div>
+
+      <div class="q red">
+        <div class="q-text">Who owns future improvements to the algorithm — especially if the Trading LP funds the development costs?</div>
+        <div class="q-why"><span class="flag">MOST COMMONLY MISSED CLAUSE.</span> If the LP pays for data, engineers, or cloud compute that improves the algorithm, does the LP acquire ownership of those improvements? This must be explicit in the license agreement. Leaving it silent means the partners will dispute it the moment the relationship changes. Recommended default: creator retains ownership of all improvements; LP receives an expanded license covering improvements automatically; LP-funded development costs are treated as additional pre-paid royalty and deducted accordingly.</div>
+      </div>
+
+      <div class="q">
+        <div class="q-text">Should the IP LLC be owned by the creator directly or through their dynasty trust — and what are the tax and estate consequences of each?</div>
+        <div class="q-why"><strong>Why ask:</strong> If the creator owns the IP LLC directly, the IP (and its future appreciation as the algorithm proves itself) sits in their taxable estate. If the dynasty trust owns the IP LLC from day one, all future appreciation accumulates outside the estate — no estate tax on the IP's value at death. The trust structure requires more setup (SD corporate trustee, trust agreement) but for an algorithm generating $50M+/yr the estate planning benefit is substantial. This decision needs to be made before the IP LLC is formed — retrofitting trust ownership after the IP has value is a taxable gift.</div>
+      </div>
+
+      <div class="q">
+        <div class="q-text">What happens to the IP license if the creator partner exits the Trading LP — does the license automatically terminate, continue, or convert to a different arrangement?</div>
+        <div class="q-why"><strong>Why ask:</strong> The license agreement must address this explicitly. If the creator leaves and the license terminates, the remaining partners cannot legally use the algorithm — the LP is effectively shut down. Options: (a) license continues for a defined wind-down period; (b) LP has a right of first offer to purchase the IP at fair value; (c) license converts to a non-exclusive arrangement. Whatever the answer, it must be in writing before the partnership starts, not negotiated under pressure when a partner is leaving.</div>
+      </div>
+
+      <div class="q">
+        <div class="q-text">Which entity should claim the §41 R&D credit for algorithm development — the IP LLC, the Trading LP, or the S-corps — and how do we structure development expenditures to maximize it?</div>
+        <div class="q-why"><strong>Why ask:</strong> The §41 R&D credit flows to whoever pays the qualified research expenses — wages, contract developers, cloud compute. If the IP LLC employs developers directly, the IP LLC claims the credit. If the Trading LP funds development, the LP claims it and the credit flows through to partners' K-1s. The CPA must map where development money actually flows and structure it intentionally — not let it land wherever is most convenient and hope for the best.</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- SECTION 4: TTS AT PARTNER LEVEL -->
+  <div class="section">
+    <div class="section-head">
+      <div class="section-num">4</div>
       <div class="section-title">Trader Tax Status — Partner Level<span class="sub">Each partner qualifies independently or not at all</span></div>
     </div>
     <div class="q-list">
@@ -305,10 +346,10 @@ hr{border:none;border-top:1px solid #2e2822;margin:48px 0}
     </div>
   </div>
 
-  <!-- SECTION 4: PPLI / IDF -->
+  <!-- SECTION 5: PPLI / IDF -->
   <div class="section">
     <div class="section-head">
-      <div class="section-num">4</div>
+      <div class="section-num">5</div>
       <div class="section-title">PPLI / Insurance-Dedicated Fund<span class="sub">The centerpiece — also the most compliance-intensive</span></div>
     </div>
     <div class="q-list">
@@ -346,10 +387,10 @@ hr{border:none;border-top:1px solid #2e2822;margin:48px 0}
     </div>
   </div>
 
-  <!-- SECTION 5: RETIREMENT STACK -->
+  <!-- SECTION 6: RETIREMENT STACK -->
   <div class="section">
     <div class="section-head">
-      <div class="section-num">5</div>
+      <div class="section-num">6</div>
       <div class="section-title">Retirement Stack<span class="sub">Cash-balance, 401(k), Roth — sized correctly</span></div>
     </div>
     <div class="q-list">
@@ -377,10 +418,10 @@ hr{border:none;border-top:1px solid #2e2822;margin:48px 0}
     </div>
   </div>
 
-  <!-- SECTION 6: ESTATE PLANNING -->
+  <!-- SECTION 7: ESTATE PLANNING -->
   <div class="section">
     <div class="section-head">
-      <div class="section-num">6</div>
+      <div class="section-num">7</div>
       <div class="section-title">Estate Planning<span class="sub">Lock in exemptions before they move</span></div>
     </div>
     <div class="q-list">
@@ -413,10 +454,10 @@ hr{border:none;border-top:1px solid #2e2822;margin:48px 0}
     </div>
   </div>
 
-  <!-- SECTION 7: DEDUCTION GENERATORS -->
+  <!-- SECTION 8: DEDUCTION GENERATORS -->
   <div class="section">
     <div class="section-head">
-      <div class="section-num">7</div>
+      <div class="section-num">8</div>
       <div class="section-title">Deduction Generators<span class="sub">O&amp;G, real estate, R&amp;D — only if structured correctly</span></div>
     </div>
     <div class="q-list">
@@ -439,10 +480,10 @@ hr{border:none;border-top:1px solid #2e2822;margin:48px 0}
     </div>
   </div>
 
-  <!-- SECTION 8: NIIT + CONTESTED POSITIONS -->
+  <!-- SECTION 9: NIIT + CONTESTED POSITIONS -->
   <div class="section">
     <div class="section-head">
-      <div class="section-num">8</div>
+      <div class="section-num">9</div>
       <div class="section-title">NIIT &amp; Contested Positions<span class="sub">What position will you take, and can you defend it?</span></div>
     </div>
     <div class="q-list">
@@ -465,10 +506,10 @@ hr{border:none;border-top:1px solid #2e2822;margin:48px 0}
     </div>
   </div>
 
-  <!-- SECTION 9: COMPLIANCE + ONGOING -->
+  <!-- SECTION 10: COMPLIANCE + ONGOING -->
   <div class="section">
     <div class="section-head">
-      <div class="section-num">9</div>
+      <div class="section-num">10</div>
       <div class="section-title">Compliance &amp; Ongoing Maintenance<span class="sub">What keeps this structure alive and defensible</span></div>
     </div>
     <div class="q-list">
@@ -496,10 +537,10 @@ hr{border:none;border-top:1px solid #2e2822;margin:48px 0}
     </div>
   </div>
 
-  <!-- SECTION 10: FEES + ENGAGEMENT -->
+  <!-- SECTION 11: FEES + ENGAGEMENT -->
   <div class="section">
     <div class="section-head">
-      <div class="section-num">10</div>
+      <div class="section-num">11</div>
       <div class="section-title">Fees &amp; Engagement Structure<span class="sub">Know what you're paying and who owns each deliverable</span></div>
     </div>
     <div class="q-list">
