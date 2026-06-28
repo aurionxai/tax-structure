@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Questions for the Attorney / CPA</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=IBM+Plex+Mono:wght@400;600&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cave:#191512;
+  --cave2:#1e1a16;
+  --cave3:#252019;
+  --bone:#e9ddc8;
+  --bone2:#c8bba4;
+  --ochre:#f0993f;
+  --ochre2:#d97b29;
+  --blood:#c0392b;
+  --moss:#4a7c59;
+  --slate:#5a6e8a;
+  --dim:#6e6354;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+
+body{
+  background:var(--cave);
+  color:var(--bone);
+  font-family:'Atkinson Hyperlegible',Georgia,serif;
+  font-size:16px;
+  line-height:1.65;
+  min-height:100vh;
+  background-image:
+    radial-gradient(ellipse 80% 60% at 50% -10%, rgba(240,153,63,.06) 0%, transparent 70%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.65' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='400' height='400' filter='url(%23n)' opacity='.04'/%3E%3C/svg%3E");
+}
+
+.page{max-width:860px;margin:0 auto;padding:48px 24px 80px}
+
+/* MASTHEAD */
+.masthead{text-align:center;padding:56px 0 48px;border-bottom:1px solid #2e2822}
+.masthead .eyebrow{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--dim);margin-bottom:16px}
+.masthead h1{font-family:'Alfa Slab One',serif;font-size:clamp(30px,6vw,52px);color:var(--bone);line-height:1.1;margin-bottom:14px}
+.masthead h1 span{color:var(--ochre)}
+.masthead .sub{color:var(--bone2);font-size:17px;max-width:580px;margin:0 auto;line-height:1.55}
+
+/* STRIP */
+.strip{background:var(--blood);padding:20px 28px;margin:40px 0;border-radius:6px;text-align:center}
+.strip p{font-family:'IBM Plex Mono',monospace;font-size:13px;line-height:1.6;color:#f0d0cc;letter-spacing:.03em}
+.strip strong{color:#fff}
+
+/* SECTION */
+.section{margin:48px 0}
+.section-head{
+  display:flex;align-items:center;gap:12px;
+  margin-bottom:24px;
+  padding-bottom:12px;
+  border-bottom:1px solid #2e2822;
+}
+.section-num{
+  font-family:'Alfa Slab One',serif;
+  font-size:28px;
+  color:var(--ochre);
+  min-width:36px;
+}
+.section-title{
+  font-family:'Alfa Slab One',serif;
+  font-size:20px;
+  color:var(--bone);
+  line-height:1.2;
+}
+.section-title .sub{
+  display:block;
+  font-family:'Atkinson Hyperlegible',Georgia,serif;
+  font-size:13px;
+  font-weight:400;
+  color:var(--dim);
+  letter-spacing:.04em;
+  text-transform:uppercase;
+  margin-top:3px;
+}
+
+/* QUESTION CARDS */
+.q-list{display:flex;flex-direction:column;gap:12px}
+
+.q{
+  background:var(--cave2);
+  border:1px solid #2e2822;
+  border-left:3px solid var(--ochre2);
+  border-radius:6px;
+  padding:18px 20px;
+}
+.q.red{border-left-color:var(--blood)}
+.q.moss{border-left-color:var(--moss)}
+.q.slate{border-left-color:var(--slate)}
+
+.q-text{
+  font-size:16px;
+  color:var(--bone);
+  font-weight:700;
+  line-height:1.45;
+  margin-bottom:6px;
+}
+.q-why{
+  font-family:'IBM Plex Mono',monospace;
+  font-size:12px;
+  color:var(--dim);
+  line-height:1.5;
+}
+.q-why strong{color:var(--ochre)}
+.q-why .flag{color:var(--blood)}
+
+/* VERDICT CALLOUT */
+.verdict{
+  background:var(--cave3);
+  border:1px solid #3a322a;
+  border-radius:8px;
+  padding:20px 22px;
+  margin-top:20px;
+}
+.verdict .label{
+  font-family:'IBM Plex Mono',monospace;
+  font-size:11px;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  color:var(--moss);
+  margin-bottom:8px;
+}
+.verdict p{font-size:14px;color:var(--bone2);line-height:1.6}
+
+/* RED FLAG BOX */
+.redflag{
+  background:#1f1210;
+  border:1px solid #5a2020;
+  border-radius:8px;
+  padding:20px 22px;
+  margin-top:20px;
+}
+.redflag .label{
+  font-family:'IBM Plex Mono',monospace;
+  font-size:11px;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  color:var(--blood);
+  margin-bottom:8px;
+}
+.redflag p{font-size:14px;color:#e8c0bc;line-height:1.6}
+
+/* DIVIDER */
+hr{border:none;border-top:1px solid #2e2822;margin:48px 0}
+
+/* NAV */
+.nav{text-align:center;padding:32px 0 0;border-top:1px solid #2e2822;margin-top:48px}
+.nav a{
+  display:inline-block;
+  padding:12px 28px;
+  background:var(--cave2);
+  border:1px solid #3a322a;
+  border-radius:8px;
+  color:var(--bone2);
+  text-decoration:none;
+  font-size:14px;
+  margin:6px;
+  transition:border-color .2s;
+}
+.nav a:hover{border-color:var(--ochre2);color:var(--ochre)}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- MASTHEAD -->
+  <div class="masthead">
+    <div class="eyebrow">Attorney / CPA Vetting Guide — HFT Tax Structure</div>
+    <h1>Questions to <span>Ask the Professionals</span></h1>
+    <p class="sub">Before you sign an engagement letter or execute a single entity, make sure the people you're hiring have actually done this before — and can prove it.</p>
+  </div>
+
+  <!-- STRIP -->
+  <div class="strip">
+    <p><strong>The wrong advisor costs more than the tax bill.</strong> A §475(f) election filed late is permanent harm. A PPLI built without investor-control doctrine compliance triggers retroactive taxation. A CB plan sized wrong fails qualification. The questions below are your filter. Wrong answers → wrong firm.</p>
+  </div>
+
+  <!-- SECTION 1: QUALIFYING THE TEAM -->
+  <div class="section">
+    <div class="section-head">
+      <div class="section-num">1</div>
+      <div class="section-title">Qualifying the Team<span class="sub">Ask before anything else</span></div>
+    </div>
+    <div class="q-list">
+
+      <div class="q red">
+        <div class="q-text">How many active HFT or algorithmic trading partnerships have you structured in the last three years, and can you describe one in general terms?</div>
+        <div class="q-why"><span class="flag">FILTER QUESTION.</span> You want a firm that has built this before. "We've done trader tax" is not the same as "we've built a multi-partner HFT LP with §475 + S-corps + PPLI." Get specifics. A firm that hesitates or pivots to "we handle lots of partnerships" is a red flag.</div>
+      </div>
+
+      <div class="q red">
+        <div class="q-text">Who specifically on your team will handle the §475(f) election, the LP agreement drafting, and the PPLI structure — and what is their direct experience with each?</div>
+        <div class="q-why"><span class="flag">CRITICAL.</span> These are three different specialties. Many firms have a strong tax partner and a weak drafter, or vice versa. You need someone who has personally drafted the §475 resolution, negotiated the management fee language in an LP agreement, and interfaced with a PPLI carrier on investor-control compliance. Find out who the human beings are — not the firm's name.</div>
+      </div>
+
+      <div class="q">
+        <div class="q-text">Have you ever represented a client in a TTS audit or a PPLI investor-control challenge? What was the outcome?</div>
+        <div class="q-why"><strong>Why ask:</strong> Defense experience is different from planning experience. A firm that has been through an IRS examination on TTS or PPLI knows where the pressure points are and will build the documentation to survive one. A firm that has only done planning may not.</div>
+      </div>
+
+      <div class="q">
+        <div class="q-text">Who is your recommended PPLI carrier and IDF manager, and what is your existing relationship with them?</div>
+        <div class="q-why"><strong>Why ask:</strong> PPLI specialists maintain working relationships with carriers (Lincoln Benefit Life, Nationwide, Pacific Life, etc.) and independent IDF managers. A firm that says "we'll help you find one" rather than naming relationships is likely not experienced in this space.</div>
+      </div>
+
+      <div class="q">
+        <div class="q-text">Do you have a trader-tax CPA and a tax attorney working together on your team, or are you asking us to coordinate two separate firms ourselves?</div>
+        <div class="q-why"><strong>Why ask:</strong> The LP agreement is legal work; the §475 election and retirement plan are CPA/actuarial work; the PPLI is insurance and tax work. You need coordinated execution, not separate firms billing in parallel and missing the handoffs between them.</div>
+      </div>
+
+    </div>
+    <div class="redflag">
+      <div class="label">Red Flags — Walk Away</div>
+      <p>Any of these in the first meeting: "we handle lots of trading clients" (vague), recommending a C-corp as the trading vehicle, mentioning captive insurance without immediately flagging the listed-transaction risk, quoting the §199A deduction on trading income (does not apply), or promising the NIIT exemption as a sure thing.</p>
+    </div>
+  </div>
+
+  <!-- SECTION 2: ENTITY FORMATION + §475 -->
+  <div class="section">
+    <div class="section-head">
+      <div class="section-num">2</div>
+      <div class="section-title">Entity Formation &amp; Elections<span class="sub">The foundation — errors here are permanent</span></div>
+    </div>
+    <div class="q-list">
+
+      <div class="q red">
+        <div class="q-text">Walk me through exactly how you execute the §475(f) election for a new entity — what document is filed, when, and what is the deadline?</div>
+        <div class="q-why"><span class="flag">NON-NEGOTIABLE.</span> The correct answer: an internal resolution by the partnership is adopted within <strong>75 days of the entity's first tax year beginning</strong>. No IRS filing is required for the initial election — only the annual Form 3115 or disclosure. If they say "you file with the IRS within 75 days," they are wrong. If they are uncertain about the window, they have not done this.</div>
+      </div>
+
+      <div class="q red">
+        <div class="q-text">How do you structure the LP agreement so that each partner's S-corp management fee only reduces that partner's distributive share — not all partners' K-1s?</div>
+        <div class="q-why"><span class="flag">DRAFTING TRAP.</span> If the management fee is treated as a general partnership expense, every partner bears 25% of every other partner's fee. The fee must be a <strong>guaranteed payment under §707(c)</strong> or a partner-specific capital account charge. Ask them to name the mechanism — if they can't, the LP agreement will be drafted wrong.</div>
+      </div>
+
+      <div class="q">
+        <div class="q-text">What jurisdiction do you recommend for the Trading LP and why — Wyoming, Delaware, or Nevada — and how do you confirm no income tax nexus is created in the partners' operating states?</div>
+        <div class="q-why"><strong>Why ask:</strong> Wyoming offers the strongest charging order protection and no franchise tax. But nexus/apportionment risk depends on where partners physically trade. The firm must have a nexus analysis in place before entity formation — state tax surprise is a large, avoidable bill.</div>
+      </div>
+
+      <div class="q">
+        <div class="q-text">Does the LP agreement need a §754 election, and when must it be included?</div>
+        <div class="q-why"><strong>Why ask:</strong> A §754 election allows inside basis step-up when a partner transfers their interest or dies. It must be in the partnership agreement from day one or elected on the partnership's first return. Missing it means future partners inherit the original cost basis — a significant compounding problem over time.</div>
+      </div>
+
+      <div class="q">
+        <div class="q-text">For the S-corp election (Form 2553), what is the deadline, and what happens if we miss it?</div>
+        <div class="q-why"><strong>Why ask:</strong> Form 2553 must be filed within <strong>75 days of formation</strong> (or by March 15 of the first full tax year). Missing it means the entity is taxed as a C-corp or default LLC for the entire year — expensive and painful to unwind. The firm should have a standard checklist that prevents this.</div>
+      </div>
+
+      <div class="q">
+        <div class="q-text">How do you split the trading book between §1256 (index options: SPX, NDX, RUT, XSP) and §475 (single-name equity options) at the entity level, and how is that maintained operationally?</div>
+        <div class="q-why"><strong>Why ask:</strong> The split determines how much income lands at ~27% (60/40 §1256) vs. 40.8% (ordinary). The firm must understand that <strong>SPY, QQQ, and IWM options are NOT §1256</strong> — only the underlying index instruments are. They should help you document the allocation methodology annually.</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- SECTION 3: TTS AT PARTNER LEVEL -->
+  <div class="section">
+    <div class="section-head">
+      <div class="section-num">3</div>
+      <div class="section-title">Trader Tax Status — Partner Level<span class="sub">Each partner qualifies independently or not at all</span></div>
+    </div>
+    <div class="q-list">
+
+      <div class="q red">
+        <div class="q-text">Does each partner need to independently qualify for Trader Tax Status, or does the LP's TTS qualification flow through to everyone automatically?</div>
+        <div class="q-why"><span class="flag">CRITICAL DISTINCTION.</span> TTS for expense deductions on each partner's <em>individual</em> return requires independent facts-and-circumstances qualification per partner. The §475(f) election at the entity level converts character — that flows through. But TTS for Schedule C or §162 treatment on each K-1 is a partner-level determination. A partner who reviews monthly reports but doesn't actively trade, manage risk, or conduct research may fail individually. The firm must advise each partner on this separately.</div>
+      </div>
+
+      <div class="q">
+        <div class="q-text">What documentation does each partner need to maintain to substantiate their individual TTS qualification, and how often?</div>
+        <div class="q-why"><strong>Why ask:</strong> The IRS will audit TTS at the individual return level. You need contemporaneous records: trade decision logs, hours spent on research and risk management, frequency and regularity of engagement. "I'm a partner in an HFT fund" is not documentation. The firm should provide a template or system for this.</div>
+      </div>
+
+      <div class="q">
+        <div class="q-text">What happens to a partner's personal trading in their individual brokerage accounts while the LP is active — and can those accounts trigger wash sales that affect the LP's §475 election?</div>
+        <div class="q-why"><strong>Why ask:</strong> §475 eliminates wash sales inside the LP. But if a partner trades substantially identical securities in a personal account, cross-account wash sales can still apply. The firm should advise partners to close or freeze personal accounts trading overlapping securities, or establish tracking procedures.</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- SECTION 4: PPLI / IDF -->
+  <div class="section">
+    <div class="section-head">
+      <div class="section-num">4</div>
+      <div class="section-title">PPLI / Insurance-Dedicated Fund<span class="sub">The centerpiece — also the most compliance-intensive</span></div>
+    </div>
+    <div class="q-list">
+
+      <div class="q red">
+        <div class="q-text">Describe specifically how you structure the relationship between the Trading LP and the IDF manager to satisfy the investor-control doctrine — what can partners communicate to the IDF manager, and what is prohibited?</div>
+        <div class="q-why"><span class="flag">MOST IMPORTANT PPLI QUESTION.</span> The correct answer: partners may provide a general investment mandate (strategy type, risk parameters, asset classes). Partners <strong>cannot</strong> communicate specific trade instructions. The IDF manager must be genuinely independent — separate firm, different systems, capable of managing other clients. If the firm says "the IDF can just run the same book" or can't articulate these limits clearly, find a different firm.</div>
+      </div>
+
+      <div class="q red">
+        <div class="q-text">How does §817(h) quarterly diversification testing work operationally — who monitors compliance, what happens if a quarter-end test would fail, and how does this affect the IDF's trading strategy?</div>
+        <div class="q-why"><span class="flag">OPERATIONAL CONSTRAINT.</span> §817(h) requires: no more than 55% in one investment, 70% in two, 80% in three, 90% in four — at quarter-end. For a concentrated HFT strategy, this means the IDF must actively manage or reduce positions before March 31, June 30, September 30, and December 31. The firm should explain what IDF return reduction (expect 70–80% of LP returns) this creates and who monitors each quarter-end.</div>
+      </div>
+
+      <div class="q red">
+        <div class="q-text">Walk me through 7-Pay Test compliance — what triggers a MEC, what are the consequences, and who monitors it on an ongoing basis?</div>
+        <div class="q-why"><span class="flag">MEC IS CATASTROPHIC.</span> A Modified Endowment Contract turns policy loans into taxable income plus a 10% penalty. The 7-Pay Test must be monitored at every premium payment AND every time a material change in benefits occurs. The carrier should provide written confirmation that each premium payment passes the test. This should be in the engagement agreement with the carrier — confirm it explicitly.</div>
+      </div>
+
+      <div class="q">
+        <div class="q-text">Do you recommend a domestic or foreign PPLI carrier for this structure, and why?</div>
+        <div class="q-why"><strong>Why ask:</strong> Domestic carriers (Lincoln Benefit Life, Nationwide, Pacific Life) are cleaner — no FBAR, no PFIC risk on the IDF, no offshore compliance. Foreign carriers may offer more IDF flexibility but add Form 8938, potential PFIC classification, and FBAR obligations. The firm should be able to justify their recommendation with specific tradeoffs for this fact pattern.</div>
+      </div>
+
+      <div class="q">
+        <div class="q-text">How does the PPLI death benefit interact with estate planning — specifically, does the policy need to be owned by a trust to keep the death benefit out of the estate?</div>
+        <div class="q-why"><strong>Why ask:</strong> If the insured partner owns the policy, the death benefit is included in their gross estate. For it to be estate-tax-free, the trust (typically a South Dakota dynasty trust or ILIT) must own the policy from inception — or be transferred more than 3 years before death. The firm's estate and insurance teams need to coordinate this from day one.</div>
+      </div>
+
+      <div class="q">
+        <div class="q-text">What is your process for policy loan management — how do you prevent a lapse that would trigger a massive phantom income event?</div>
+        <div class="q-why"><strong>Why ask:</strong> If a PPLI policy lapses with outstanding loans, the entire accumulated gain inside becomes taxable in the year of lapse — potentially tens of millions of dollars in a single year. The firm should have a written loan-to-value protocol (typically max 75–80% LTV), annual review triggers, and a paydown plan in the engagement.</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- SECTION 5: RETIREMENT STACK -->
+  <div class="section">
+    <div class="section-head">
+      <div class="section-num">5</div>
+      <div class="section-title">Retirement Stack<span class="sub">Cash-balance, 401(k), Roth — sized correctly</span></div>
+    </div>
+    <div class="q-list">
+
+      <div class="q red">
+        <div class="q-text">What W-2 salary does each partner need from their S-corp to fund the cash-balance / defined-benefit plan at each age, and are there any plan qualification risks we should know about?</div>
+        <div class="q-why"><span class="flag">ARITHMETIC CONSTRAINT.</span> The CB/DB contribution cannot exceed the partner's W-2 compensation (IRC §415). If a 55-year-old partner wants a $220K CB contribution, they need at least $220K in W-2. The firm must build a W-2-to-CB plan contribution table for each partner and confirm the S-corp pay structure supports it. Ask them to show the math.</div>
+      </div>
+
+      <div class="q">
+        <div class="q-text">Do the Trading LP and the four S-corps form a controlled group for retirement plan testing purposes, and how do you confirm they don't?</div>
+        <div class="q-why"><strong>Why ask:</strong> If the entities form a controlled group (generally 80%+ common ownership), their employees must be tested together for retirement plan purposes. If the partners each own 25% of the LP but 100% of their own S-corp, a controlled group analysis is required. The firm should run this test before establishing any plan.</div>
+      </div>
+
+      <div class="q">
+        <div class="q-text">Walk me through the mega backdoor Roth mechanics for this structure — after-tax 401(k) contributions and in-plan conversion — and what are the dollar limits for each partner in 2026?</div>
+        <div class="q-why"><strong>Why ask:</strong> 2026 limits: $72K total employee + employer contributions (under 50) / $80K+ (50+). After-tax contributions up to the limit less elective deferral and employer match, then immediate Roth conversion. The plan document must permit in-plan Roth conversions — confirm it does before assuming this works.</div>
+      </div>
+
+      <div class="q">
+        <div class="q-text">If a partner has any pre-tax IRA balances, how does the pro-rata rule affect the backdoor Roth IRA conversion, and what needs to happen first?</div>
+        <div class="q-why"><strong>Why ask:</strong> Pre-tax IRA balances trigger the pro-rata rule — part of every conversion becomes taxable proportionally. The fix is to roll pre-tax IRA funds into the S-corp 401(k) plan (if the plan accepts rollovers) to clear the IRA, then execute the backdoor Roth. The firm must advise each partner individually on their IRA situation.</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- SECTION 6: ESTATE PLANNING -->
+  <div class="section">
+    <div class="section-head">
+      <div class="section-num">6</div>
+      <div class="section-title">Estate Planning<span class="sub">Lock in exemptions before they move</span></div>
+    </div>
+    <div class="q-list">
+
+      <div class="q red">
+        <div class="q-text">What valuation discount can you defensibly support on a Trading LP interest holding liquid, single-name equity options — and what is your exposure if the IRS challenges it?</div>
+        <div class="q-why"><span class="flag">DON'T LET THEM SAY 35%.</span> Post-Strangi, Holman, and Grieve, the Tax Court has consistently pushed back on discounts above 25% for entities holding liquid, marketable securities. A defensible range is <strong>20–25%</strong>. 35% invites challenge. Ask what qualified appraiser they use and whether that appraiser has defended a trading-entity discount before the Tax Court.</div>
+      </div>
+
+      <div class="q red">
+        <div class="q-text">Before we execute a SLAT for any partner, what is the exposure if that partner's marriage ends in divorce?</div>
+        <div class="q-why"><span class="flag">PARTNERS MUST UNDERSTAND THIS.</span> A SLAT is irrevocable. If the marriage ends in divorce, the grantor loses access to those assets permanently — the ex-spouse remains a beneficiary. On a $10–15M SLAT, this is a major asset on the opposing side of a divorce. Each partner must make this decision with full knowledge of this risk. The firm should require confirmation that each partner understands it before drafting.</div>
+      </div>
+
+      <div class="q">
+        <div class="q-text">What is the current estate and gift tax exemption per person, and what happens to unused exemption if the law changes — is there a clawback risk on gifts made today?</div>
+        <div class="q-why"><strong>Why ask:</strong> The IRS issued final regulations in 2019 confirming there is <strong>no clawback</strong> — gifts made under the higher exemption are protected even if the exemption reverts. But the firm should confirm this is still the operative guidance and that the SLAT/IDGT structures are designed to capture the current limit.</div>
+      </div>
+
+      <div class="q">
+        <div class="q-text">Walk us through the IDGT structure — how does the note sale work, what interest rate is required, and how does the grantor's tax payment on trust income function as an additional tax-free gift?</div>
+        <div class="q-why"><strong>Why ask:</strong> An IDGT lets a partner sell LP interests to the trust for a promissory note at the IRS §7520 rate (monthly, tied to Treasury rates). The trust's future appreciation escapes gift and estate tax. Because the grantor is treated as the trust's owner for income tax, they pay the tax on trust income — which is an additional transfer not subject to gift tax. The firm should explain this clearly. If they can't, they have not done it before.</div>
+      </div>
+
+      <div class="q">
+        <div class="q-text">What South Dakota trustee do you use for dynasty trust setups, and what are the annual trustee fees?</div>
+        <div class="q-why"><strong>Why ask:</strong> SD dynasty trusts require a South Dakota corporate trustee (state law requirement). The firm should have existing relationships. Annual fees are typically 0.10–0.25% of trust assets for a directed trust structure (where an investment advisor, not the trustee, makes investment decisions). Confirm the fee structure and directed-trust approach up front.</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- SECTION 7: DEDUCTION GENERATORS -->
+  <div class="section">
+    <div class="section-head">
+      <div class="section-num">7</div>
+      <div class="section-title">Deduction Generators<span class="sub">O&amp;G, real estate, R&amp;D — only if structured correctly</span></div>
+    </div>
+    <div class="q-list">
+
+      <div class="q red">
+        <div class="q-text">For oil and gas working interests, how must the interest be held to satisfy the §469(c)(3) non-passive exception — and does your recommended O&G program actually satisfy this?</div>
+        <div class="q-why"><span class="flag">MOST COMMON O&G MISTAKE.</span> The §469(c)(3) exception from passive-activity rules ONLY applies if the working interest is held in a form that does NOT limit the taxpayer's liability. If held through an LLC or LP (most packaged O&G programs use these), the exception does <strong>not</strong> apply — the losses are passive and cannot offset trading income. The interest must be held directly or through a general partnership. Most O&G promoters do not tell you this. Confirm the ownership structure in writing.</div>
+      </div>
+
+      <div class="q">
+        <div class="q-text">For the real estate strategy, how do you establish the Short-Term Rental exception to passive activity — and what does "material participation" mean for a partner who is also running an HFT operation full time?</div>
+        <div class="q-why"><strong>Why ask:</strong> The STR exception (average guest stay ≤7 days + material participation in the STR activity) makes rental losses non-passive without needing Real Estate Professional Status. But material participation for STRs requires 500+ hours/year in that specific rental activity. A partner spending 3,000 hours/year on HFT will find this difficult to establish. Confirm the hours requirement is realistic.</div>
+      </div>
+
+      <div class="q">
+        <div class="q-text">For R&amp;D credits under §41, what specific activities and expenses qualify — and how do you document them for an HFT firm developing proprietary algorithms?</div>
+        <div class="q-why"><strong>Why ask:</strong> The §41 R&D credit applies to qualified research expenses: wages, supplies, and contract research for developing proprietary technology. HFT algorithm development qualifies if the firm is developing genuinely new methods (not just adapting existing tools). The firm must help document the qualified research activities contemporaneously — the credit is auditable and requires a 4-part test.</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- SECTION 8: NIIT + CONTESTED POSITIONS -->
+  <div class="section">
+    <div class="section-head">
+      <div class="section-num">8</div>
+      <div class="section-title">NIIT &amp; Contested Positions<span class="sub">What position will you take, and can you defend it?</span></div>
+    </div>
+    <div class="q-list">
+
+      <div class="q">
+        <div class="q-text">Will you take the position that TTS trading income is exempt from the 3.8% NIIT — and if so, what is your honest probability estimate of prevailing if audited?</div>
+        <div class="q-why"><strong>Why ask:</strong> The NIIT/TTS exemption is contested. The IRS position (supported by final Treas. Reg. §1.1411-5) is that trading income IS subject to NIIT even for TTS traders. Courts have generally sided with the IRS. The firm should be honest: this is a ~30% probability position at best. If they say it is "well-established" or "very likely to succeed," they are overselling. Accept the position only with eyes open and adequate reserves.</div>
+      </div>
+
+      <div class="q">
+        <div class="q-text">If the IRS challenges the NIIT position, what is the expected cost of defense, and at what point does the position become uneconomic to maintain?</div>
+        <div class="q-why"><strong>Why ask:</strong> At $475K/partner/year in NIIT savings, this position is worth fighting for if the defense cost is proportionate. But if the IRS assesses, adds interest and penalties, and the firm can't sustain the position through Tax Court, the math may flip. The firm should be able to give you a realistic defense cost estimate and a point at which settlement makes more sense.</div>
+      </div>
+
+      <div class="q">
+        <div class="q-text">What other positions in this structure are contested or audit-sensitive, and what reserves should we maintain against each?</div>
+        <div class="q-why"><strong>Why ask:</strong> Beyond NIIT, the following carry audit risk: TTS individual qualification (especially less-active partners), PPLI investor-control compliance, O&G working interest non-passive treatment, valuation discounts on LP interests, reasonable compensation on S-corps. The firm should map these with estimated exposure and reserve recommendations.</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- SECTION 9: COMPLIANCE + ONGOING -->
+  <div class="section">
+    <div class="section-head">
+      <div class="section-num">9</div>
+      <div class="section-title">Compliance &amp; Ongoing Maintenance<span class="sub">What keeps this structure alive and defensible</span></div>
+    </div>
+    <div class="q-list">
+
+      <div class="q red">
+        <div class="q-text">In year one, each partner will have $12.5M+ in K-1 income with no withholding. How do you help us plan quarterly estimated tax payments — and what is the risk of underpayment penalty?</div>
+        <div class="q-why"><span class="flag">CASH FLOW CRUNCH.</span> At 40% effective rate, each partner owes ~$5M/year in taxes — approximately $1.25M per quarter (Form 1040-ES). No withholding comes from the LP. In year one, partners are simultaneously funding PPLI premiums, CB plan contributions, O&G placements, and estimated taxes. The firm must build a cash flow projection before year one begins or partners face a penalty + liquidity problem simultaneously.</div>
+      </div>
+
+      <div class="q">
+        <div class="q-text">How do you handle year-end mark-to-market valuations under §475 — especially for any less-liquid or lower-volume option positions?</div>
+        <div class="q-why"><strong>Why ask:</strong> All §475 positions must be marked to FMV on December 31. Liquid positions on active strikes are straightforward. Far-OTM or long-dated positions may have limited market data. The IRS can challenge year-end marks that appear to minimize income. The firm should help establish a written valuation methodology and independent price verification process before the first year-end.</div>
+      </div>
+
+      <div class="q">
+        <div class="q-text">What does the annual compliance calendar look like — what filings, elections, reviews, and appraisals need to happen and when?</div>
+        <div class="q-why"><strong>Why ask:</strong> You should receive a written calendar covering: quarterly estimated taxes (Apr 15 / Jun 15 / Sep 15 / Jan 15), Q4 estimated tax (Jan 15), Form 1065 (Mar 15), individual returns (Apr 15 / Oct 15 extended), §817(h) quarterly testing, 7-Pay Test monitoring at each premium, Form 709 gift tax returns (Apr 15), CB plan contribution deadlines, valuation appraisals for any gifts. If the firm can't produce this, your compliance is in their head, not a system.</div>
+      </div>
+
+      <div class="q">
+        <div class="q-text">How do you document reasonable compensation on each S-corp, and what is your benchmark for "reasonable" at this income level?</div>
+        <div class="q-why"><strong>Why ask:</strong> IRS Watson v. Commissioner established that S-corp owner-employees must pay themselves reasonable compensation before distributions. For a management company charging $2M+ in fees to a Trading LP, reasonable compensation for an HFT manager with this expertise is likely $150–400K. Too low and you lose the argument; too high and you lose more to payroll tax unnecessarily. The firm should run a compensation study and document it annually.</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- SECTION 10: FEES + ENGAGEMENT -->
+  <div class="section">
+    <div class="section-head">
+      <div class="section-num">10</div>
+      <div class="section-title">Fees &amp; Engagement Structure<span class="sub">Know what you're paying and who owns each deliverable</span></div>
+    </div>
+    <div class="q-list">
+
+      <div class="q">
+        <div class="q-text">What is your all-in fee for year one — entity formation, LP agreement, S-corp elections, §475 election, retirement plan establishment, and initial PPLI coordination — broken down by deliverable?</div>
+        <div class="q-why"><strong>Why ask:</strong> Year-one legal + CPA setup typically runs $60–150K for a structure this complex. Get it itemized: LP agreement drafting, §475 election resolution, Form 2553, retirement plan documents (Form 5500 required annually), PPLI carrier coordination. If they quote a single blended number, push for the breakdown — it tells you where their expertise actually is.</div>
+      </div>
+
+      <div class="q">
+        <div class="q-text">What are your ongoing annual fees for compliance, and what specifically does that include versus what is billed separately?</div>
+        <div class="q-why"><strong>Why ask:</strong> Annual compliance runs $40–80K in a well-structured engagement: Form 1065 (partnership return), 4 individual returns, 4 S-corp returns, 4 Form 709 gift tax returns, CB plan Form 5500, TTS documentation review. Itemize what is included and what triggers extra billing (audit defense, state notices, additional plan testing).</div>
+      </div>
+
+      <div class="q">
+        <div class="q-text">If the IRS audits any element of this structure, are you part of the defense team, and what is your hourly rate for audit representation?</div>
+        <div class="q-why"><strong>Why ask:</strong> The firm that built the structure should be available to defend it. Confirm whether audit representation is in scope, at what rate, and whether they carry professional liability insurance (E&O) for the advisory work. You are deploying $50M/year through this structure — understand who stands behind it if challenged.</div>
+      </div>
+
+      <div class="q">
+        <div class="q-text">What written deliverables do we receive from you — opinion letter, tax memorandum, documented position papers — and which positions have written opinions supporting them?</div>
+        <div class="q-why"><strong>Why ask:</strong> A written tax opinion shifts the accuracy-related penalty (from 20% to 0% for a "more likely than not" opinion) and demonstrates the firm took a reasoned position. The PPLI investor-control structure and NIIT position in particular should have written support. A firm that won't provide written opinions on the significant positions is not comfortable defending them.</div>
+      </div>
+
+    </div>
+    <div class="verdict">
+      <div class="label">The Right Answer on Price</div>
+      <p>A qualified firm for this structure charges $60–150K in year one and $40–80K annually per partner. Do not shop on price. The wrong firm executing a §475 election late, a PPLI built without investor-control compliance, or an LP agreement with the management fee in the wrong bucket will cost more in tax and penalties than the fee savings over the entire engagement. The question is competence, not cost.</p>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- NAV -->
+  <div class="nav">
+    <a href="index.html">← Back to Index</a>
+    <a href="ONE-SHEET.html">The Plan</a>
+    <a href="COST-SHEET.html">What This Costs</a>
+  </div>
+
+</div>
+</body>
+</html>
