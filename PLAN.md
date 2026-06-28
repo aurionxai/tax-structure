@@ -15,7 +15,7 @@ The partners run a high-frequency, real-time daily trading operation generating 
 
 Because the partners already live in zero-tax states, **state planning is effectively done**; the objective is to legally reduce/defer the **federal** bite (top 37% + 3.8% NIIT context) on ordinary trading income. The single largest legitimate lever at this scale is **character conversion and tax-free inside buildup**, not deductions.
 
-**NIIT exemption under TTS (contested — high-dollar if confirmed):** The 3.8% NIIT (§1411) may not apply to TTS traders' trading income. The argument: TTS trading income arises from an active §162 trade or business, which is excluded from the §1411 net investment income base. The IRS has not definitively ruled; this position is contested but widely taken by trader-tax practitioners. If confirmed: **baseline drops from 40.8% → 37% — saving $1.9M/yr firmwide at $50M**. The CPA must model both scenarios, take a documented position with supporting authority, and re-run the effective-rate model accordingly. Do not assume it applies without counsel sign-off.
+**NIIT exemption under TTS (contested — IRS has generally prevailed; model conservatively):** The 3.8% NIIT (§1411) may not apply to TTS traders' trading income. The argument: §1411(c)(4) excludes income from an active §162 trade or business; TTS trading is such a business. The IRS position — supported by final Treas. Reg. §1.1411-5 and §1402(a)(3) (which excludes trading from self-employment income, signaling Congress did not intend trading as a §162 business for §1411 purposes) — is that trading income IS subject to NIIT even for TTS traders. Courts have been mixed but the IRS has generally prevailed. **Assign this a ~30% probability of success; do not build cash-flow plans assuming it applies.** If counsel takes the position, document it thoroughly and reserve the $475K/partner annually against a potential assessment. Do not treat this as a baseline savings scenario.
 
 ---
 
@@ -25,6 +25,7 @@ Because the partners already live in zero-tax states, **state planning is effect
 
 **Entity A — Trading vehicle: LP or LLC taxed as a partnership (Form 1065).**
 - Holds capital, executes all trades, claims **Trader Tax Status (TTS)** (facts-and-circumstances: substantial, frequent, regular, continuous; multiple active partners strengthens the "business" narrative).
+- **TTS must be established at the partner level individually** — not just at the LP level. The §475(f) election converts character at the entity level (correct), but TTS for purposes of expense deductions on each partner's individual return requires each partner to independently satisfy the facts-and-circumstances test. A partner who is mostly passive — reviewing reports but not actively engaged in trading decisions, risk management, or research — may fail TTS individually even if the LP qualifies. Each partner must maintain contemporaneous records of their own trading activity, hours, and decision-making participation. IRS has successfully challenged individual partners in trading partnerships on exactly this basis.
 - **Greenfield advantage:** because nothing is formed yet, we form clean entities and capture the **§475(f) election within the 75-day internal-resolution window** (dated internal resolution, no IRS filing) — no transition mess, no pre-existing wash-sale baggage, free choice of WY/DE/NV domicile. (An *existing* entity would instead face the brutal **March 15** deadline.)
 
 **Single-name HFT options election strategy:**
@@ -41,6 +42,7 @@ Because the partners already live in zero-tax states, **state planning is effect
 - **The Trading LP K-1 is separate:** the bulk of the $50M flows as K-1 — NO W-2, NO SE tax. W-2 rule only touches the management fee slice inside the S-corp.
 - **The Trading LP needs zero employees.** TTS qualification is about trading activity, not headcount.
 - **Documentation critical for solo setup:** the S-corp must have genuine, documented services provided to the Trading LP — research, risk management, administrative oversight. Solo setup with thin documentation is the most common solo-trader audit trigger.
+- **Management fee allocation — critical partnership agreement drafting:** if each partner's S-corp charges a management fee to the Trading LP and the fee is treated as a general LP operating expense, it reduces ALL partners' K-1 income proportionally (each bears 25% of every other partner's fee in a 4-partner structure). Partners are effectively subsidizing each other's S-corp deductions. The attorney must structure management fees as **guaranteed payments** under §707(c) or as charges solely against the paying partner's capital account — not as shared partnership expenses. This is a common drafting error and must be specified in the LP agreement before any fees are paid.
 
 ### Layer 2 — Solo S-corp retirement stack (the solopreneur advantage)
 
@@ -57,8 +59,20 @@ Because each S-corp has a single participant, the cash-balance plan is sized pur
 
 *2026 §415 limits: $72,000 (under 50) / $80,000 (50+). Mega backdoor = §415 limit minus elective deferrals. Age 60–63 enhanced catch-up (SECURE 2.0) = $11,250 → reduces after-tax room slightly vs. 50–59.*
 
+**W-2 floor required for CB plan — explicit constraint:**
+The CB/DB contribution cannot exceed the partner's W-2 compensation from the S-corp (IRC §415(b) limits). This means:
+
+| Age | CB contribution | Minimum W-2 required |
+|-----|----------------|----------------------|
+| 40  | ~$100K         | ≥$100K               |
+| 50  | ~$175K         | ≥$175K               |
+| 55  | ~$220K         | ≥$220K               |
+| 60+ | ~$280K+        | ≥$280K+              |
+
+Set the W-2 at the CB contribution amount or higher. The FICA cost on the incremental W-2 (above the SS wage base: 2.9% Medicare only) is minimal vs. the tax-deferred CB benefit. Do not set the W-2 at $150K and expect to make a $220K CB contribution — it will fail plan qualification.
+
 **Key rules:**
-- **Cash-balance/DB:** pre-tax deferral, NOT Roth. Grows tax-deferred, taxed on withdrawal. Contributions are % of W-2 comp — the $150–200K+ salary must be set high enough to support the math.
+- **Cash-balance/DB:** pre-tax deferral, NOT Roth. Grows tax-deferred, taxed on withdrawal. Contributions are % of W-2 comp — the W-2 must equal or exceed the CB contribution amount (see table above).
 - **Mega backdoor Roth:** after-tax 401(k) contributions up to the §415 DC limit (**$72K under 50 / $80K age 50+ in 2026**), immediately converted to Roth. After-tax room = §415 limit minus elective deferrals: **~$48,500 (under 50) / ~$49,000 (50–59) / ~$45,250 (60–63)**. Less if S-corp pays employer match/profit-sharing into the plan.
 - **Backdoor Roth IRA:** $7K–$8K/yr (age 50+) — contribute to traditional IRA, immediately convert. Separate from the 401(k) stack.
 - **What $165K+ actually means:** total retirement deferral space (cash-balance + 401(k)) can exceed $165K, but **only the ~$46–54K after-tax/Roth portion goes into Roth**. The rest is pre-tax. Both are worth doing — different tools.
@@ -68,12 +82,25 @@ Because each S-corp has a single participant, the cash-balance plan is sized pur
 
 This is what actually moves the needle on a high-churn ordinary-income strategy:
 
-- **Private Placement Life Insurance (PPLI)** wrapping an **Insurance-Dedicated Fund (IDF)** that runs the trading strategy.
+- **Private Placement Life Insurance (PPLI)** wrapping an **Insurance-Dedicated Fund (IDF)** that runs a trading strategy.
   - Growth inside the policy compounds **tax-free**; policy **loans** are accessed tax-free; **death benefit** passes income-tax-free.
   - Converts the most tax-inefficient income (short-term trading gains) into tax-free buildup — the institutional answer to exactly this fact pattern.
-  - **Hard requirements / guardrails:** partners must be **accredited investors / qualified purchasers**; **§817(h) diversification** rules; and the **investor-control doctrine** (the insured cannot direct the underlying trades — an independent IDF manager must run it). Insurability and underwriting required.
+  - Partners must be **accredited investors / qualified purchasers**. Insurability and medical underwriting required for each partner.
+
+- **§817(h) diversification — operational constraint, not a checkbox:** The IDF must satisfy §817(h) at the END OF EVERY CALENDAR QUARTER: no more than 55% in one investment, 70% in two, 80% in three, 90% in four. For a concentrated HFT strategy that runs large positions in individual names, this means the IDF CANNOT be a direct copy of the Trading LP book. The IDF manager must actively close or reduce concentrated positions at quarter-end to maintain compliance — which alters the strategy's character, execution, and returns. **Plan for IDF returns to be 70–80% of the Trading LP's returns** due to this constraint and the drag of diversification requirements. The tax advantage is still enormous even at 70–80%; the savings model uses this range, not 100% return replication.
+
+- **Investor-control doctrine — operational specifics (PLRs 9813010, 200338012):** The IRS tests the totality of the relationship. The following will attract challenge and must be avoided:
+  - IDF manager's only client is this firm's PPLI policies (no genuine independence)
+  - IDF manager shares office space, staff, technology, or systems with the Trading LP
+  - Any partner communicates with the IDF manager about specific trades — even informally
+  - The IDF replicates the LP book with no meaningful operational differences
+  - **The correct structure:** the strategy brief (general investment mandate, risk parameters, asset classes) is provided to the IDF manager. Day-to-day trade selection and execution are the IDF manager's independent decisions. Partners cannot say "buy AAPL options today" — they can say "run a single-name HFT equity options strategy with these risk parameters." Different firm, different systems, genuinely capable of managing other clients.
+
+- **7-Pay Test — ongoing compliance, not a one-time event:** The 7-Pay Test limits annual premiums relative to the death benefit to prevent the policy from becoming a Modified Endowment Contract (MEC). **A MEC destroys the strategy**: policy loans become taxable income plus a 10% penalty — identical to an IRA early withdrawal. The test resets any time a material change in benefits occurs (death benefit increase, policy reinstatement, exchange). Every premium payment and every benefit change must be monitored by the insurance carrier. Establish a written premium monitoring protocol with the carrier before funding begins.
+
+- **Domestic vs. foreign PPLI:** US-domiciled carriers (Lincoln Benefit Life, Nationwide, Pacific Life, etc.) are the cleaner default — no FBAR, no §954 CFC risk, no PFIC exposure. Foreign carriers (Cayman, Liechtenstein, Ireland-based) may offer more flexible IDF structures and higher premium capacity, but create offshore compliance obligations (FBAR, Form 8938, potential PFIC classification of the IDF as a foreign passive investment) that increase complexity and audit risk. Use domestic PPLI unless a foreign carrier provides a specific, documented structural advantage that outweighs the compliance burden.
+
 - **Private Placement Variable Annuity (PPVA)** as the alternative where insurability is poor — gives tax **deferral** (distributions are ordinary, no death-benefit step-up). PPLI is superior where partners are insurable.
-- **Practical reality:** the partners' *own* high-frequency book and the *IDF* must be kept genuinely separate (investor-control). The PPLI typically holds a meaningful sleeve of capital, not necessarily 100% of the active book.
 
 ### Layer 4 — Charitable, estate & wealth transfer (the largest single-number lever, realized at death)
 
@@ -98,7 +125,9 @@ The OBBBA set the estate and gift tax exemption at **$15M/person** ($30M/couple)
 - **GRAT (Grantor Retained Annuity Trust):** transfer asset appreciation out of the estate at low/zero gift cost; remainder passes estate-tax-free. Best when hurdle rate (§7520 rate) is low and asset growth is high.
 - **SLAT (Spousal Lifetime Access Trust):** irrevocable trust for spouse → removes assets from the grantor's estate while spouse can still benefit as a beneficiary. Locks in today's $15M exemption immediately. Structure two reciprocal SLATs with **different trustees, different assets, and time staggering** to avoid the reciprocal trust doctrine.
 - **IDGT (Intentionally Defective Grantor Trust):** sell Trading LP interests to the trust in exchange for a promissory note at the §7520 rate. Future appreciation leaves the estate at the time of the sale; the grantor continues paying income tax on trust income (which is itself an additional tax-free gift to the trust). Superior to GRATs when asset growth is high/uncertain and no fixed term is needed.
-- **Valuation discounts on LP/LLC interest gifts or sales:** when gifting or selling a minority interest in the Trading LP to a trust, a qualified appraiser establishes a **20–40% valuation discount** for lack of marketability and lack of control. A $15M gift exemption at a 35% discount effectively transfers **$23M of economic value** tax-free. Requires a timely qualified appraisal filed with the gift tax return.
+- **Valuation discounts on LP/LLC interest gifts or sales:** when gifting or selling a minority interest in the Trading LP to a trust, a qualified appraiser establishes a valuation discount for lack of marketability and lack of control. **Defensible range for a trading LP: 20–25%.** Post-Strangi, Holman, and Grieve, the IRS and Tax Court consistently push back on discounts above 25% for entities holding liquid, marketable securities (which options in named stocks are). A 35% discount is aggressive and will attract challenge; 20–25% is the defensible base case. At 25%: each $15M exemption transfers ~$20M of economic value; 4 partners = **$80M economic value moved for $60M in exemptions — $32M estate tax avoided**. Requires a timely qualified appraisal by a credentialed appraiser filed with the gift tax return (Form 709).
+
+- **SLAT divorce risk — material non-tax exposure:** a SLAT removes assets from the grantor's estate by making the spouse the trust beneficiary. If the marriage ends in divorce, the grantor loses access to those assets entirely — they remain in the ex-spouse's benefit column. A SLAT of $10–15M in a high-net-worth divorce proceeding is a significant asset on the opposing side. Mitigations: (a) strong trustee discretion provisions limiting distributions; (b) independent institutional trustee rather than family trustee; (c) each partner evaluates this risk before executing. For unmarried partners, SLATs are not available — use IDGTs, GRATs, or outright gifts instead.
 
 #### 4E — Dynasty trust domicile: South Dakota (not Wyoming or Delaware)
 For **dynasty trusts**, the domicile must be **South Dakota**, not WY/DE/NV:
@@ -112,7 +141,7 @@ For **dynasty trusts**, the domicile must be **South Dakota**, not WY/DE/NV:
 ### Layer 5 — Supplemental offsets, credits & 2025-law upgrades (additive to Layers 1–4)
 
 **Deduction generators (real economic substance required):**
-- **Oil & gas working interests** — IDCs ~60–85% deductible year one; **§469(c)(3) working-interest exception** makes losses non-passive (offsets trading income directly); percentage depletion on production.
+- **Oil & gas working interests** — IDCs ~60–85% deductible year one; percentage depletion on production. **Critical structural requirement:** the §469(c)(3) non-passive exception ONLY applies if the working interest is held in a form that does NOT limit the taxpayer's liability — meaning direct ownership or through a general partnership. If held through an LLC or LP (the way most modern O&G programs are structured), the taxpayer has limited liability → the exception does not apply → losses are passive and cannot offset trading income. Partners must hold O&G working interests directly or through a general partnership, not through a liability-limiting entity. Confirm structure with counsel before deploying capital; most packaged O&G programs use LLCs and will not satisfy §469(c)(3).
 - **Real estate + cost seg + 100% bonus depreciation** (OBBBA made permanent, property acquired after 1/19/25). Traders can't realistically get REPS (trading hours swamp the personal-services test) — use the **STR exception** (avg stay ≤7 days + material participation) to make losses non-passive without REPS.
 - **R&D credit (§41)** on proprietary algo/infra development — legitimately claimable by an HFT firm; OBBBA restored **immediate domestic R&D expensing** (no §174 amortization drag).
 - **§6418 transferable energy credits** — buy at ~88–94¢/$; honest flag: passive-activity credit rules largely limit individuals to offsetting passive income → poor fit for partners directly; better inside a C-corp. Completeness item only.
@@ -171,6 +200,10 @@ At $50M+/yr income, the partnership becomes a target for creditor claims, judgme
 - **Contemporaneous documentation** of TTS qualification (trade logs, hours, frequency).
 - **Pro-rata rule check before any backdoor Roth:** If any partner has existing traditional IRA balances with pre-tax contributions, the backdoor Roth conversion is taxed pro-rata across ALL IRA balances (the "cream in the coffee" rule). The CPA must identify and eliminate pre-tax IRA balances — roll them to the 401(k) plan or execute a strategic conversion in a loss year — before starting the annual backdoor Roth program. Zero tolerance for overlooking this.
 - **PPLI lapse/loan management protocol:** Before the first policy loan is drawn, the IDF manager and insurance carrier must establish a written loan management policy: maximum loan-to-cash-value ratio (≤75–80%), annual review triggers, and paydown requirements. A lapse with loans outstanding produces a catastrophic single-year ordinary income event on all accrued gain. At $100M+/policy this is existential.
+- **Cross-account wash sale risk:** §475 eliminates wash sales inside the Trading LP. But if any partner also trades substantially identical securities in a personal brokerage account (Schwab, Fidelity, etc.), the wash sale rule can apply across accounts — the personal account's loss positions may be washed by the LP's positions or vice versa. Partners should cease trading substantially identical securities in personal accounts while the LP is active, or coordinate carefully to avoid cross-account wash sale exposure. This is a common audit trigger.
+- **§163(j) business interest limitation on margin:** If the Trading LP uses margin, the interest expense may be subject to §163(j)'s 30% of adjusted taxable income (ATI) limitation. With $50M in ordinary income, the ATI is large and the limitation may not bind — but in a loss year or early year with reduced ATI, margin interest deductions could be capped. Confirm with CPA whether margin interest is characterized as business interest (§163(j)) or investment interest (§163(d), limited to net investment income) — TTS determines the characterization. Review annually.
+- **Year-end mark-to-market valuation policy:** Under §475, all positions must be marked to FMV at December 31. For liquid single-name options, this is straightforward. For any less-liquid positions (far-OTM, longer-dated, lower-volume names), a written valuation methodology and independent price verification must be documented annually. The IRS can challenge year-end marks that appear to minimize income. Establish a written valuation policy with the CPA before the first year-end close.
+- **Estimated tax payments:** With $12.5M annual K-1 income per partner and no withholding from the LP, each partner must make quarterly estimated tax payments (Form 1040-ES). At ~40% effective rate: ~$5M/yr per partner in estimated payments ($1.25M/quarter). Underpayment penalty is currently 8%+/yr. Failure to plan for this cash flow — especially while simultaneously funding PPLI premiums, CB plan contributions, and O&G investments — creates a liquidity crunch in year one. The S-corp W-2 withholding covers only a small portion. CPA must build quarterly cash flow projection before year one begins.
 
 ---
 
@@ -252,6 +285,8 @@ Trading LP/LLC (Form 1065)
 **Immediate (before entity formation):**
 - **Disability insurance:** Begin underwriting for own-occupation policies for each partner NOW — before PPLI underwriting, before any health events surface. Schedule medical exams to also serve PPLI underwriting. This is the most time-sensitive non-tax item.
 - **Annual gift exclusion:** Begin $19K/person/yr gifts immediately — no entities required. No planning lag. Write the checks.
+- **Close or freeze personal brokerage accounts** that hold substantially identical securities to what the LP will trade — eliminates cross-account wash sale exposure from day one.
+- **Build year-one cash flow model** with CPA: estimated tax payments (~$1.25M/quarter per partner), PPLI premium funding, CB plan contributions, and O&G deployment all hit simultaneously in year one. Plan the liquidity stack before entities are formed.
 
 **Phase 1 — Entity formation (execute together, clock-sensitive):**
 1. **Engage** trader-tax CPA + tax attorney + PPLI specialist / IDF manager.
@@ -278,9 +313,14 @@ Trading LP/LLC (Form 1065)
 13. **Layer** charitable vehicles (CRT/DAF/CLAT) if philanthropically motivated.
 
 **Ongoing (annual):**
-14. **Document** TTS (trade logs, hours, frequency), management fees, and economic substance — contemporaneously, every year.
-15. **§817(h) diversification testing, TTS substantiation, nexus/domicile confirmation** — attorney + CPA review annually.
-16. **Asset location review** — confirm HFT gains routed to PPLI, stable assets in pre-tax, highest-return positions in Roth.
+14. **Document** TTS at the partner level individually (not just LP level) — each partner's trade logs, hours, decision-making participation. Contemporaneous, every year. IRS challenge comes at the individual partner return, not the LP return.
+15. **§817(h) diversification testing** — quarterly (not annually); IDF manager must confirm compliance at each calendar quarter-end. Positions may need to be reduced at quarter-end to pass. Document each quarter.
+16. **PPLI 7-Pay Test monitoring** — every premium payment and every benefit change must be reviewed by the insurance carrier for MEC risk. Establish an annual premium schedule review meeting with carrier.
+17. **Year-end MTM valuations** — written valuation policy applied to all positions; CPA signs off on year-end marks before filing.
+18. **TTS substantiation, nexus/domicile confirmation, reasonable comp review** — attorney + CPA review annually.
+19. **Asset location review** — confirm HFT gains routed to PPLI, stable assets in pre-tax, highest-return positions in Roth.
+20. **Estimated tax payment true-up** — each quarter, reconcile actual income vs. estimated payment to avoid underpayment penalty.
+21. **Valuation appraisals** — if LP interest gifts or IDGT sales are made during the year, qualified appraisal must be completed and attached to the gift tax return (Form 709). Do not gift first and appraise later.
 
 ## Verification / testing (how you confirm it works)
 - **Pre-mortem modeling:** have the CPA build a side-by-side effective-tax-rate model — *status quo* vs. *proposed* — across a representative trade mix, showing the marginal contribution of (a) 475/1256 split, (b) qualified plans, (c) PPLI inside buildup, (d) charitable.

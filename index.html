@@ -13,9 +13,25 @@ p{color:#b8aa8f;margin-bottom:40px;font-size:17px}
 a{display:block;padding:24px 36px;background:#2b251f;border:1.5px solid #3a322a;border-radius:14px;text-decoration:none;color:#e9ddc8;font-size:18px;transition:border-color .2s,transform .2s}
 a:hover{border-color:#d97b29;transform:translateY(-3px)}
 a .label{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:#6e6354;margin-bottom:6px}
+/* SITENAV */
+.sitenav{position:sticky;top:0;z-index:999;background:#191512;border-bottom:1px solid #2e2822;padding:0 20px;display:flex;align-items:center;justify-content:space-between;height:46px}
+.sitenav-brand{font-family:Georgia,serif;font-size:13px;color:#f0993f;text-decoration:none;letter-spacing:.05em;white-space:nowrap}
+.sitenav-links{display:flex;gap:2px}
+.sitenav-links a{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#6e6354;text-decoration:none;padding:8px 11px;border-radius:4px;transition:color .15s,background .15s;white-space:nowrap}
+.sitenav-links a:hover{color:#e9ddc8;background:#252019}
+@media(max-width:560px){.sitenav-brand{display:none}.sitenav-links a{padding:7px 8px;font-size:10px;letter-spacing:.02em}}
 </style>
 </head>
 <body>
+<nav class="sitenav">
+  <a class="sitenav-brand" href="index.html">Tax Structure</a>
+  <div class="sitenav-links">
+    <a href="ONE-SHEET.html">The Plan</a>
+    <a href="COST-SHEET.html">Costs</a>
+    <a href="QUESTIONS.html">Questions</a>
+    <a href="TIMELINE.html">Timeline</a>
+  </div>
+</nav>
 <div class="wrap">
   <h1>Tax Structure</h1>
   <p>Partner reference documents · 2026</p>

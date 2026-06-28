@@ -6,13 +6,11 @@
 
 **Ticker-symbol options are *securities*, not §1256 contracts.** No 60/40 rate. The core book is ordinary-rate (**37% + 3.8% NIIT = 40.8%**), and no legal structure changes that character. The plan's value is therefore: (1) §475 protection, (2) deduct everything real, (3) shield the compounding via PPLI, (4) offset with substance-based deductions.
 
-**NIIT/TTS exemption — two baseline scenarios:**
-TTS traders operating as an active §162 trade or business may be **exempt from the 3.8% NIIT** (§1411). The IRS has not definitively ruled; this position is contested but widely taken. If the exemption is confirmed:
-- Baseline drops: **40.8% → 37.0%**
-- Firm saves: **$1.9M/yr with zero additional structure** ($475K/partner)
-- All effective rates below shift ~3.8 points
-
-The CPA must model both scenarios and take a documented position. Numbers below show the NIIT-included baseline (40.8%); NIIT-exempt scenario noted where it materially changes the picture.
+**NIIT/TTS exemption — low-probability upside, not a planning baseline:**
+TTS traders may argue trading income is excluded from the 3.8% NIIT under §1411(c)(4). The IRS position (supported by final Treas. Reg. §1.1411-5 and §1402(a)(3)) is that trading income IS subject to NIIT even for TTS traders. Courts have generally sided with the IRS. **Assign ~30% probability of success.** Do not build spending or distribution plans assuming it applies. If counsel takes the position:
+- Potential upside if sustained: **$1.9M/yr firmwide** ($475K/partner)
+- Reserve the $475K/partner annually against potential assessment + interest
+- The baseline throughout this model is **40.8%** (NIIT included). The NIIT-exempt column in the rate trajectory table below reflects upside only.
 
 ## Baseline — no structure
 
@@ -31,12 +29,13 @@ Plus an unpriced hazard: without §475, HFT in overlapping strikes/expiries trig
 
 | Lever | Firm/yr | Per partner/yr |
 |---|---|---|
-| **NIIT/TTS exemption** *(contested — CPA must take position)* | **$1.9M** | **$475K** |
 | TTS business-expense deductions (~$2M real costs: data, infra, comp) | ~$0.8M | ~$200K |
-| R&D credit (§41) — strong fit for HFT algo/infra dev + immediate §174A expensing | ~$0.4–0.6M | ~$100–150K |
+| R&D credit (§41) — HFT algo/infra dev; OBBBA restored immediate domestic R&D expensing | ~$0.4–0.6M | ~$100–150K |
 | Annual gift exclusion ($19K/person/yr — zero structure, start day one) | *(wealth transfer, not income tax)* | ~$152K+/yr per partner moved estate-tax-free |
-| **Subtotal without NIIT exemption** | **~$1.2–1.4M** | **~$300–350K** |
-| **Subtotal with NIIT exemption** | **~$3.1–3.3M** | **~$775–825K** |
+| **Subtotal — base structure (Year 1)** | **~$1.2–1.4M** | **~$300–350K** |
+| NIIT/TTS exemption *(~30% probability; upside only — do not include in base plan)* | *+$1.9M if sustained* | *+$475K if sustained* |
+
+> **Year-1 base rate of ~38% requires specific actions:** expenses + R&D credit alone get to ~40%. To reach ~38%, the S-corp deduction stack (accountable plan, Augusta Rule, health insurance, CB plan) must be fully operational in year one. To reach ~27–31% in year one, O&G or real estate deployments requiring **$5–10M of capital at real investment risk** must be made. Model the base case at ~39–40% until those deployments are confirmed.
 
 **Deferrals:**
 
@@ -67,16 +66,17 @@ Growth shielded at the full 40.8% ordinary rate. Illustrative: ~$25M inside per 
 
 ## Effective rate trajectory (4 partners)
 
-| | Baseline 40.8% (NIIT in) | Baseline 37% (NIIT exempt) | Per-partner saved vs 40.8% baseline |
+| | Base rate (NIIT included — use this) | NIIT-exempt upside (~30% probability) | Per-partner saved vs 40.8% baseline |
 |---|---|---|---|
-| Baseline | 40.8% | 37.0% | — |
-| Year 1 — base structure | **~38%** | **~34%** | ~$300–350K (without NIIT) · ~$775–825K (with NIIT) |
-| Year 1 — with deduction generators (O&G/RE) | **~31%** | **~27%** | ~$1.2–1.5M/partner |
-| Year 5+ (PPLI scaled) | **~29–31%** | **~25–27%** | **~$1.8–2.0M/yr** (without NIIT) · ~$2.3–2.5M (with) |
-| Year 5+ with deduction-generator program | **~26–28%** | **~22–24%** | **~$2.2–2.5M/yr** |
-| Year 10 full stack | **~18–20%** | **~15–17%** | **~$5M+/yr** |
+| Baseline | **40.8%** | 37.0% *(upside only)* | — |
+| Year 1 — S-corp stack only | **~39–40%** | ~35–36% | ~$100–200K |
+| Year 1 — full base structure | **~38%** | ~34% | ~$300–350K |
+| Year 1 — with O&G/RE generators ($5–10M deployed) | **~31%** | ~27% | ~$1.2–1.5M/partner |
+| Year 5+ (PPLI scaled, IDF at 70–80% of LP returns) | **~29–31%** | ~25–27% | **~$1.5–1.8M/yr** |
+| Year 5+ with deduction-generator program | **~26–28%** | ~22–24% | **~$2.0–2.3M/yr** |
+| Year 10 full stack | **~18–20%** | ~15–17% | **~$5M+/yr** |
 
-*NIIT/TTS exemption scenario assumes CPA takes position and it is sustained. If challenged and reversed: effective rate adds 3.8 points back. Model conservatively; take the position; defend it.*
+*Base case is the NIIT-included column. NIIT-exempt column shown for reference only — assign ~30% probability, do not use for cash-flow planning. IDF returns modeled at 70–80% of Trading LP returns to reflect §817(h) diversification constraints and independent management drag.*
 
 ## Sensitivities
 
@@ -108,15 +108,15 @@ Growth shielded at the full 40.8% ordinary rate. Illustrative: ~$25M inside per 
 
 ## Bucket 2 — On reinvested wealth: PPLI/IDF compounding
 
-~$30M+/yr after-tax reinvested through PPLI instead of taxable accounts:
+~$30M+/yr after-tax reinvested through PPLI instead of taxable accounts. **Important modeling note:** the IDF is subject to §817(h) quarterly diversification requirements, which constrain concentrated HFT positioning. IDF returns are modeled at **70–80% of the Trading LP's returns** — not 1:1 — to reflect this structural difference and the independent management layer. The tax advantage is so large that even at 70% return replication, the after-tax outcome inside PPLI vastly exceeds a taxable account.
 
-| Stage | Inside (firmwide) | Saved vs taxable/yr |
+| Stage | PPLI pool (firmwide, 70–80% return replication) | Saved vs taxable/yr |
 |---|---|---|
-| Year 2 | ~$40M | ~$2.4M |
-| Year 5 | ~$100M | **~$6.1M** (~$1.5M/partner) |
-| Year 10 | ~$250M+ | **~$15M+** (~$3.8M/partner), accelerating |
+| Year 2 | ~$35M | ~$2.1M |
+| Year 5 | ~$85M | **~$5.2M** (~$1.3M/partner) |
+| Year 10 | ~$200M+ | **~$12M+** (~$3.0M/partner), accelerating |
 
-Exits income-tax-free at death (and estate-tax-free if trust-owned).
+Exits income-tax-free at death (and estate-tax-free if trust-owned). If IDF achieves closer to 100% of LP returns (possible with disciplined quarter-end management), figures approach the higher end of the range; use the 70–80% assumption for conservative planning.
 
 ## Bucket 3 — Estate (largest single number, realized once)
 
@@ -124,8 +124,9 @@ Dynasty trusts (South Dakota) owning PPLI + GRATs/SLATs/IDGTs + LP-interest gift
 
 **Valuation discount leverage on the $15M/person exemption:**
 - Without discounts: 4 partners × $15M exemption = $60M moved outside estate → saves ~$24M estate tax
-- With 35% discount on minority LP interests (qualified appraisal required): each $15M exemption transfers ~$23M FMV → 4 partners = **$92M economic value moved for the same exemption** → saves **~$37M estate tax**
-- The discount alone adds **$13M** to the estate savings vs. ungifted transfers
+- With **25% discount** (defensible base case for a trading LP per post-Strangi/Holman case law; 35% is aggressive and will be challenged): each $15M exemption transfers ~$20M FMV → 4 partners = **$80M economic value moved for $60M in exemptions** → saves **~$32M estate tax**
+- The discount adds **~$8M** to the estate savings vs. ungifted transfers
+- 35% discount is shown as an upside scenario only; do not use as a base case
 
 **Lock in $15M now — SLAT/IDGT urgency:**
 - Current $15M exemption may revert to ~$7M in future legislation. Each partner who acts now vs. waiting locks in an **extra $8M of sheltering**
@@ -166,14 +167,16 @@ Dynasty trusts (South Dakota) owning PPLI + GRATs/SLATs/IDGTs + LP-interest gift
 | Year 5 | ~22–24% | ~19–21% | ~$13M/yr (~$3.2M/partner) |
 | Year 10 | ~18–20% | ~15–17% | ~$21M+/yr (~$5M+/partner) |
 | **10-yr cumulative — income tax** | — | — | **~$130–180M** |
-| **10-yr cumulative — estate tax** | — | — | **~$95–175M+** (up from prior $60M+ estimate with discounts + SLAT/IDGT) |
-| **Total 10-yr** | — | — | **~$225–355M+** |
+| **10-yr cumulative — estate tax** | — | — | **~$85–160M+** (25% discount base case; 35% discount upside adds ~$5M) |
+| **Total 10-yr** | — | — | **~$215–340M+** |
 
-**What changed in the estate estimate (vs prior ~$60M):**
-- Valuation discounts on LP gifts turn $60M of exemption into $92M of economic value transferred (+$13M saved)
-- SLAT/IDGT executed now locks in $15M exemption before potential reversion to $7M (+$12.8M if sunset occurs)
-- Annual gifts + 529 superfunding add ~$3.5–4M more
-- PPLI + dynasty trust compounding base case raised given year-5 PPLI pool growth projections
+**Estate estimate components (revised to 25% discount base case):**
+- Valuation discounts on LP gifts (25%): $60M exemption → $80M economic value transferred → **+$8M** estate tax avoided vs. no discount
+- SLAT/IDGT executed now before potential $15M → $7M sunset: **+$12.8M** if exemption reverts
+- Annual gifts (10 yrs): **+$2.4M** estate tax avoided
+- 529 superfunding: **+$1.15M**
+- PPLI + dynasty trust compounding (revised to 70–80% IDF return assumption): **$40–100M+** (scales with AUM)
+- **35% discount upside:** if appraisal supports and IRS does not successfully challenge, adds ~$5M — shown as scenario only
 
 **The legal floor:** ~18–20% blended (15–17% with TTS NIIT exemption) is where proven-legal ends for US citizens with ordinary trading income. Everything below it — basket options ($7B RenTec settlement), micro-captives, offshore deferral, syndicated easements — is litigated, listed, or dead.
 
