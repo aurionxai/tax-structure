@@ -101,17 +101,43 @@ This is what actually moves the needle on a high-churn ordinary-income strategy:
 
 ---
 
+## Entity flow (simplified)
+
+```
+Trading LP/LLC (Form 1065)
+│  └─ all trades, TTS, §475(f) election, zero employees
+│
+├─ K-1 (bulk of $50M) ──────────────────────────────────────────┐
+│   NO W-2 required · NO SE tax · ordinary income               │
+│                                                                │
+└─ Management fee ──> [Partner A S-corp] [Partner B S-corp] ... │
+                       W-2 ($150–400K)   W-2 ($150–400K)        │
+                       + distributions   + distributions         │
+                       + 401k/CB plan    + 401k/CB plan          │
+                                                                 ▼
+                                                   Partners receive K-1
+                                                   → PPLI sleeve
+                                                   → Dynasty trusts
+                                                   → Retirement accounts
+                                                   → Kids' Roth IRAs
+```
+
+---
+
 ## Open variables
 **Resolved:**
-- ✅ **Entity classification:** greenfield (nothing formed) → clean formation + 75-day §475 window.
-- ✅ **Asset class:** **100% single-name (ticker) options, high-frequency** → securities book, §475(f) mandatory, ordinary rates on core P&L; PPLI + Layer 5 are the rate levers. §1256 routing only if a sub-strategy's edge ports to index paper without alpha loss.
+- ✅ **Entity:** greenfield → clean formation, 75-day §475 window, WY/DE/NV domicile.
+- ✅ **Asset class:** 100% single-name HFT options (securities, not §1256) → §475 mandatory, ordinary rates, PPLI + Layer 5 are the rate levers.
+- ✅ **Employees:** Trading LP needs zero. W-2 only required inside each partner's management S-corp (reasonable comp $150–400K; K-1 from the LP has no W-2/SE requirement).
+- ✅ **S-corp structure:** each partner can have their own S-corp for independent retirement/salary control, or share one.
+- ✅ **Kids' Roth:** W-2 from S-corp employment unlocks it; parent can fund the $7K contribution; limit = lesser of $7K or child's earned income.
+- ✅ **Capital source:** proprietary (own capital assumed).
 
-**Still to confirm (to finalize):**
-1. **Portability check** — can ANY sub-strategy express in broad-based index paper (SPX/XSP/NDX) without losing edge? Each 10% of P&L ported ≈ ~$510K/yr permanent savings firmwide.
-2. **Own capital vs. outside money** — *Assumed proprietary (own capital).* If outside investors are involved, this becomes a **fund** (GP/LP, carried interest under §1061 3-year rule, RIA registration, fund admin) — a materially different build.
-3. **Insurability** — are key partners insurable enough for **PPLI**, or is **PPVA** the fallback? Drives Layer 3.
-4. **Charitable intent** — philanthropy genuinely desired, or is Layer 4 purely a tax tool? Determines CRT/foundation scope.
-5. **Number of partners + ages** — drives cash-balance/DB plan sizing and special partnership allocations.
+**Still open:**
+1. **§1256 portability** — can any sub-strategy move to SPX/XSP/NDX paper without alpha loss? Each 10% ≈ $510K/yr firmwide.
+2. **Insurability** — PPLI vs. PPVA fallback. Drives Layer 3 sizing.
+3. **Charitable intent** — genuine philanthropy or tax-only? Determines CRT/foundation scope.
+4. **Partner count + ages** — drives cash-balance/DB plan sizing.
 
 ---
 
@@ -129,14 +155,19 @@ This is what actually moves the needle on a high-churn ordinary-income strategy:
 
 ---
 
-## "Implementation" / execution path (for the human professionals, not self-serve)
-1. **Engage** a trader-tax CPA + tax attorney + (for Layer 3) a PPLI specialist / IDF manager.
-2. **Form** Trading LP/LLC and Management S-corp; draft operating/partnership agreements with allocation provisions.
-3. **File elections on the clock:** §475(f) (internal resolution within 75 days of new-entity formation), S-corp election (Form 2553) for the management company, PTET/entity domicile filings.
-4. **Stand up** retirement plans (401(k) + cash-balance) through the management company.
-5. **Structure & underwrite** PPLI/IDF (or PPVA) with an independent manager; fund the insurance sleeve.
-6. **Layer** charitable/estate vehicles (CRT/DAF/foundation, dynasty trust owning policies).
-7. **Document** TTS, fees, and economic substance contemporaneously.
+## Implementation path (for the human professionals, not self-serve)
+1. **Engage** trader-tax CPA + tax attorney + PPLI specialist / IDF manager.
+2. **Form** Trading LP/LLC (WY/DE/NV) + one S-corp per partner (or shared); draft partnership agreement with allocation provisions and management fee terms.
+3. **File elections on the clock:**
+   - §475(f) internal resolution within **75 days** of Trading LP formation (dated, signed, filed in entity records — no IRS filing needed)
+   - S-corp elections (Form 2553) for each management S-corp
+   - PTET elections where applicable
+4. **Set reasonable W-2 salaries** in each management S-corp ($150–400K range); run payroll.
+5. **Stand up** 401(k) + cash-balance plans through each S-corp; execute mega-backdoor Roth conversions.
+6. **Employ minor children** through S-corp if applicable; document duties, set arm's-length compensation, open custodial Roth IRAs.
+7. **Structure & underwrite** PPLI/IDF with an independent manager; fund the insurance sleeve.
+8. **Layer** charitable/estate vehicles (CRT/DAF/dynasty trusts owning PPLI policies).
+9. **Document** TTS (trade logs, hours, frequency), management fees, and economic substance — contemporaneously, every year.
 
 ## Verification / testing (how you confirm it works)
 - **Pre-mortem modeling:** have the CPA build a side-by-side effective-tax-rate model — *status quo* vs. *proposed* — across a representative trade mix, showing the marginal contribution of (a) 475/1256 split, (b) qualified plans, (c) PPLI inside buildup, (d) charitable.
