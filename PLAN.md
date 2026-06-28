@@ -69,7 +69,9 @@ This is what actually moves the needle on a high-churn ordinary-income strategy:
 **Character & timing (post-OBBBA updates):**
 - **OZ 2.0** — OZs now **permanent**; rolling 5-yr deferral + 10% basis step-up (30% rural) for post-2026 investments; 10-yr tax-free appreciation retained. **With a 100% single-name §475 book, trading gains are ordinary → NOT OZ-eligible.** Only relevant if a §1256 index sleeve develops or for capital gains arising outside the trading book.
 - **Municipal bond ladder** on idle treasury/margin cash — tax-exempt float.
-- **Mega-backdoor Roth** in the S-corp 401(k) + Roth conversions in drawdown years.
+- **Mega-backdoor Roth** in the S-corp 401(k) — after-tax contributions up to the §415 total limit (~$70K/2026), immediately converted to Roth; ~$46K extra Roth space per partner per year beyond the elective deferral. Grows and exits tax-free. Small vs. $50M but free to execute.
+- **Roth conversions** in low-income years (drawdown, loss years, early retirement).
+- **Custodial / kids' Roth IRAs** — employ minor children legitimately through Company B (real work, reasonable pay); pay up to the standard deduction (~$15K, zero income tax owed); contribute up to $7K/child/yr into a Roth. Requires: genuine documented work, arm's-length compensation only. 50–60 year tax-free compounding horizon; not a current-year tax number, a legacy number. *Note: kids cannot contribute from trading P&L (not earned income) — must be W-2 from the S-corp.*
 
 **Income-shifting & charitable add-ons:**
 - **Grantor CLAT** — large upfront charitable deduction vs. current ordinary income; remainder to family at low gift cost.
