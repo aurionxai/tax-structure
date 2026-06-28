@@ -48,14 +48,16 @@ Because each S-corp has a single participant, the cash-balance plan is sized pur
 
 | Age | Cash-balance/DB | 401(k) elective | Mega backdoor Roth | Backdoor Roth IRA | Total shelter |
 |-----|----------------|-----------------|-------------------|-------------------|---------------|
-| 40  | ~$100K         | $23,500         | ~$46,500          | $7,000            | ~$177K        |
-| 50  | ~$175K         | $31,000         | ~$46,500          | $8,000            | ~$260K        |
-| 55  | ~$220K         | $31,000         | ~$46,500          | $8,000            | ~$305K        |
-| 60+ | ~$280K+        | $34,750         | ~$46,500          | $8,000            | ~$369K+       |
+| 40  | ~$100K         | $23,500         | ~$48,500          | $7,000            | ~$179K        |
+| 50  | ~$175K         | $31,000         | ~$49,000          | $8,000            | ~$263K        |
+| 55  | ~$220K         | $31,000         | ~$49,000          | $8,000            | ~$308K        |
+| 60+ | ~$280K+        | $34,750         | ~$45,250          | $8,000            | ~$368K+       |
+
+*2026 §415 limits: $72,000 (under 50) / $80,000 (50+). Mega backdoor = §415 limit minus elective deferrals. Age 60–63 enhanced catch-up (SECURE 2.0) = $11,250 → reduces after-tax room slightly vs. 50–59.*
 
 **Key rules:**
 - **Cash-balance/DB:** pre-tax deferral, NOT Roth. Grows tax-deferred, taxed on withdrawal. Contributions are % of W-2 comp — the $150–200K+ salary must be set high enough to support the math.
-- **Mega backdoor Roth:** after-tax 401(k) contributions up to the §415 DC limit (~$70K total), immediately converted to Roth. The Roth portion is ~$46,500 (§415 limit minus elective deferral; less if S-corp pays employer match).
+- **Mega backdoor Roth:** after-tax 401(k) contributions up to the §415 DC limit (**$72K under 50 / $80K age 50+ in 2026**), immediately converted to Roth. After-tax room = §415 limit minus elective deferrals: **~$48,500 (under 50) / ~$49,000 (50–59) / ~$45,250 (60–63)**. Less if S-corp pays employer match/profit-sharing into the plan.
 - **Backdoor Roth IRA:** $7K–$8K/yr (age 50+) — contribute to traditional IRA, immediately convert. Separate from the 401(k) stack.
 - **What $165K+ actually means:** total retirement deferral space (cash-balance + 401(k)) can exceed $165K, but **only the ~$46–54K after-tax/Roth portion goes into Roth**. The rest is pre-tax. Both are worth doing — different tools.
 - Health insurance premiums deductible through the S-corp.
@@ -88,7 +90,7 @@ This is what actually moves the needle on a high-churn ordinary-income strategy:
 **Character & timing (post-OBBBA updates):**
 - **OZ 2.0** — OZs now **permanent**; rolling 5-yr deferral + 10% basis step-up (30% rural) for post-2026 investments; 10-yr tax-free appreciation retained. **With a 100% single-name §475 book, trading gains are ordinary → NOT OZ-eligible.** Only relevant if a §1256 index sleeve develops or for capital gains arising outside the trading book.
 - **Municipal bond ladder** on idle treasury/margin cash — tax-exempt float.
-- **Mega-backdoor Roth** in the S-corp 401(k) — after-tax contributions up to the §415 total limit (~$70K/2026), immediately converted to Roth; ~$46K extra Roth space per partner per year beyond the elective deferral. Grows and exits tax-free. Small vs. $50M but free to execute.
+- **Mega-backdoor Roth** in the S-corp 401(k) — after-tax contributions up to the §415 total limit (**$72K under 50 / $80K age 50+, 2026**), immediately converted to Roth; **~$48,500–$49,000 Roth space per partner per year** beyond the elective deferral. Grows and exits tax-free.
 - **Roth conversions** in low-income years (drawdown, loss years, early retirement).
 - **Custodial / kids' Roth IRAs** — employ minor children legitimately through Company B (real work, reasonable pay); pay up to the standard deduction (~$15K, zero income tax owed); the **parent can write the $7K check** into the custodial Roth on the child's behalf — the IRS doesn't care who funds it, only that the child has sufficient W-2 earned income to cover the contribution (limit = lesser of $7K or child's earned income). Zero W-2 = zero Roth, regardless of parent deposit. Requires genuine documented work and arm's-length compensation. 50–60 year tax-free compounding horizon.
 
