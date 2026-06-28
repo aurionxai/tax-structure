@@ -15,6 +15,8 @@ The partners run a high-frequency, real-time daily trading operation generating 
 
 Because the partners already live in zero-tax states, **state planning is effectively done**; the objective is to legally reduce/defer the **federal** bite (top 37% + 3.8% NIIT context) on ordinary trading income. The single largest legitimate lever at this scale is **character conversion and tax-free inside buildup**, not deductions.
 
+**NIIT exemption under TTS (contested — high-dollar if confirmed):** The 3.8% NIIT (§1411) may not apply to TTS traders' trading income. The argument: TTS trading income arises from an active §162 trade or business, which is excluded from the §1411 net investment income base. The IRS has not definitively ruled; this position is contested but widely taken by trader-tax practitioners. If confirmed: **baseline drops from 40.8% → 37% — saving $1.9M/yr firmwide at $50M**. The CPA must model both scenarios, take a documented position with supporting authority, and re-run the effective-rate model accordingly. Do not assume it applies without counsel sign-off.
+
 ---
 
 ## Recommended Architecture (layered)
@@ -73,11 +75,39 @@ This is what actually moves the needle on a high-churn ordinary-income strategy:
 - **Private Placement Variable Annuity (PPVA)** as the alternative where insurability is poor — gives tax **deferral** (distributions are ordinary, no death-benefit step-up). PPLI is superior where partners are insurable.
 - **Practical reality:** the partners' *own* high-frequency book and the *IDF* must be kept genuinely separate (investor-control). The PPLI typically holds a meaningful sleeve of capital, not necessarily 100% of the active book.
 
-### Layer 4 — Charitable + estate (shelter that also transfers wealth)
+### Layer 4 — Charitable, estate & wealth transfer (the largest single-number lever, realized at death)
 
-- **Charitable Remainder Trust (CRT):** contribute appreciated positions, get a deduction, defer/spread gain, retain an income stream — useful for diversifying concentrated winners.
-- **Donor-Advised Fund (DAF)** and/or **Private Foundation** for ongoing giving and current-year deduction smoothing.
-- **Estate/wealth transfer:** at $50M/yr, dynasty/irrevocable trusts (ideally **owning the PPLI policies**, pushing death benefit *outside* the taxable estate), GRATs for transferring strategy upside at low gift cost.
+#### 4A — Annual gift exclusion (free, no structure, start immediately)
+- Each partner can gift **$19,000/person/year** (2026 limit; $38,000/year with spouse gift-splitting) to any family member, with zero gift tax owed and no gift tax return required.
+- Example: 4 kids per partner, both spouses giving = **$152,000–304,000/yr transferred silently per partner** with no planning lag.
+- This requires no entities, no elections, no attorney action — write the checks and keep records. Start on day one.
+
+#### 4B — 529 superfunding + SECURE 2.0 529→Roth rollover
+- **5-year front-load:** contribute up to **$90,000/beneficiary** in a single year by electing to treat it as 5 years of annual exclusion gifts ($18K × 5 = $90K; $180K with spouse). No gift tax; no gift tax return required beyond the 709 election.
+- **SECURE 2.0 529→Roth rollover:** after a 529 has been open for 15+ years, roll up to **$35,000 lifetime** into the beneficiary's Roth IRA (counts toward that year's Roth IRA contribution limit). Stacks on top of the kids' Roth IRA strategy — if education funds are unused, they do not go to waste.
+- Start early; the 15-year holding period clock starts on account opening date, not contribution date.
+
+#### 4C — Charitable vehicles
+- **Charitable Remainder Trust (CRT):** contribute appreciated positions, receive a partial charitable deduction, defer/spread gain recognition, retain an income stream for a term of years.
+- **Donor-Advised Fund (DAF)** for immediate large deductions with deferred grant decisions; **Private Foundation** for family philanthropy infrastructure.
+- **Grantor CLAT:** large upfront charitable deduction against current ordinary income; remainder passes to family at low gift cost.
+
+#### 4D — Advanced estate transfer (lock in $15M exemption — time-sensitive)
+The OBBBA set the estate and gift tax exemption at **$15M/person** ($30M/couple). This level is not permanent and may revert to ~$7M in future legislation. **The window to lock in transfers at $15M is now.**
+
+- **GRAT (Grantor Retained Annuity Trust):** transfer asset appreciation out of the estate at low/zero gift cost; remainder passes estate-tax-free. Best when hurdle rate (§7520 rate) is low and asset growth is high.
+- **SLAT (Spousal Lifetime Access Trust):** irrevocable trust for spouse → removes assets from the grantor's estate while spouse can still benefit as a beneficiary. Locks in today's $15M exemption immediately. Structure two reciprocal SLATs with **different trustees, different assets, and time staggering** to avoid the reciprocal trust doctrine.
+- **IDGT (Intentionally Defective Grantor Trust):** sell Trading LP interests to the trust in exchange for a promissory note at the §7520 rate. Future appreciation leaves the estate at the time of the sale; the grantor continues paying income tax on trust income (which is itself an additional tax-free gift to the trust). Superior to GRATs when asset growth is high/uncertain and no fixed term is needed.
+- **Valuation discounts on LP/LLC interest gifts or sales:** when gifting or selling a minority interest in the Trading LP to a trust, a qualified appraiser establishes a **20–40% valuation discount** for lack of marketability and lack of control. A $15M gift exemption at a 35% discount effectively transfers **$23M of economic value** tax-free. Requires a timely qualified appraisal filed with the gift tax return.
+
+#### 4E — Dynasty trust domicile: South Dakota (not Wyoming or Delaware)
+For **dynasty trusts**, the domicile must be **South Dakota**, not WY/DE/NV:
+- **No Rule Against Perpetuities** — South Dakota trusts run in perpetuity; Wyoming caps at 1,000 years.
+- **Strongest spendthrift and asset protection provisions** in the US — creditor protection is near-absolute.
+- **No state income tax on undistributed trust income** — zero SD state tax on accumulated trust earnings.
+- **Quiet trust permitted** — beneficiaries need not be notified of the trust's existence.
+- Requires a **South Dakota corporate trustee** (or co-trustee with a SD nexus); the family can retain investment direction authority as a non-fiduciary "trust protector" or investment advisor to the trust without triggering grantor trust status.
+- Dynasty trust **owns the PPLI policies** — the death benefit passes outside the taxable estate and accumulates perpetually.
 
 ### Layer 5 — Supplemental offsets, credits & 2025-law upgrades (additive to Layers 1–4)
 
@@ -102,6 +132,29 @@ This is what actually moves the needle on a high-churn ordinary-income strategy:
 **Excluded by client constraint:** expatriation/renunciation, PR Act 60, **and USVI EDC** (same bona-fide-residency requirement).
 **Additional listed-transaction traps to avoid:** syndicated conservation easements, Maltese pensions, monetized installment sales.
 
+### Layer 6 — Asset protection (critical at this scale; frequently omitted)
+
+At $50M+/yr income, the partnership becomes a target for creditor claims, judgments, and litigation. Asset protection must be built into the entity architecture from the start — retrofitting after a claim arises is too late.
+
+**Wyoming LLC (entity-level protection for the Trading LP):**
+- Wyoming has the strongest **charging order protection** in the US: a creditor who obtains a judgment against a partner can only receive a "charging order" (right to receive distributions if and when declared) — they cannot force a sale, liquidate the entity, or step into a partner's management rights. This makes a partner's interest in the LP nearly untouchable.
+- Domiciling the Trading LP in Wyoming is therefore the correct choice; the entity operates federally but the protection comes from the state of formation.
+- Nevada and South Dakota offer similar protections as backup alternatives.
+
+**Domestic Asset Protection Trust (DAPT):**
+- Available in Nevada, South Dakota, Delaware, and ~20 other states.
+- A self-settled trust where the grantor is also a potential beneficiary — yet assets are protected from future creditors.
+- **South Dakota DAPT** is the strongest: 2-year statute of limitations for fraudulent conveyance claims (vs. 4+ years elsewhere), full trust flexibility, self-settled explicitly permitted.
+- **Must be established before any creditor claim arises** (fraudulent conveyance law voids transfers made to defeat known creditors). Establish on formation.
+- Coordinate the DAPT with the dynasty trust; a combined SD DAPT/dynasty trust accomplishes asset protection, multigenerational wealth transfer, and estate tax mitigation in one instrument.
+
+**Disability insurance — own-occupation (biggest overlooked risk):**
+- The partners' most valuable income-producing asset is their ability to trade. Without it, K-1 income disappears. **No other element of this structure replaces operating income** — PPLI policy loans exist only if the PPLI has been funded over years.
+- **Own-occupation disability insurance** (individual, not group): pays if the partner cannot perform the specific occupation (trading); cannot be canceled as long as premiums are paid; replaces income regardless of other earnings.
+- **Business Overhead Expense (BOE) insurance**: covers the firm's fixed costs (data feeds, infrastructure, seat leases) during a partner's disability.
+- Both are deductible through the S-corp when structured correctly.
+- **Timing:** PPLI underwriting requires a medical exam. Schedule disability underwriting simultaneously — same medical workup, two policies, one appointment. Getting disability coverage before any health issue is detected is the single most time-sensitive non-tax action on this list.
+
 ### Explicitly NOT recommended (common traps at this profile)
 - **C-corp "blocker" to defer at 21%** — for a trading entity this triggers **Personal Holding Company tax (§541)** and **Accumulated Earnings tax (§531)** on undistributed passive/trading income; double taxation on exit. Avoid as the trading vehicle.
 - **Modeling a 20% QBI/§199A deduction** — not available for trading income.
@@ -116,8 +169,29 @@ This is what actually moves the needle on a high-churn ordinary-income strategy:
 - **§817(h) diversification** maintained inside the IDF.
 - **Domicile hygiene:** confirm true domicile in the zero-tax state and **avoid creating nexus/sourcing** in a high-tax state by physically trading from there; domicile the entities in WY/DE/NV.
 - **Contemporaneous documentation** of TTS qualification (trade logs, hours, frequency).
+- **Pro-rata rule check before any backdoor Roth:** If any partner has existing traditional IRA balances with pre-tax contributions, the backdoor Roth conversion is taxed pro-rata across ALL IRA balances (the "cream in the coffee" rule). The CPA must identify and eliminate pre-tax IRA balances — roll them to the 401(k) plan or execute a strategic conversion in a loss year — before starting the annual backdoor Roth program. Zero tolerance for overlooking this.
+- **PPLI lapse/loan management protocol:** Before the first policy loan is drawn, the IDF manager and insurance carrier must establish a written loan management policy: maximum loan-to-cash-value ratio (≤75–80%), annual review triggers, and paydown requirements. A lapse with loans outstanding produces a catastrophic single-year ordinary income event on all accrued gain. At $100M+/policy this is existential.
 
 ---
+
+## Asset Location Strategy — What Goes Where
+
+The structure creates multiple tax "buckets." Placing the right asset in the right bucket is as important as the structure itself. Attorney + CPA must review annually.
+
+| Bucket | Best assets | Why |
+|--------|-------------|-----|
+| **PPLI / IDF** | HFT trading gains (highest-frequency, highest-rate) | 40.8% → 0% inside the policy; IDF runs the same strategy; compounds on the full dollar, not 59¢ |
+| **Pre-tax 401(k) / cash-balance** | Stable return assets (bonds, structured notes, low-volatility) | Deduct at 40.8% now; withdraw in low-bracket years; no urgency to pay tax |
+| **Roth / mega backdoor Roth** | Highest-return assets the brokerage can hold | Tax-free forever; no required minimum distributions; heirs inherit tax-free with no income tax |
+| **Taxable (personal / trust)** | QSBS positions, muni bonds, appreciated long-term holds | QSBS: $10M/investment excluded after 5 yrs; munis: already tax-exempt; long-term holds get basis step-up at death |
+| **South Dakota dynasty trust** | PPLI policies, LP interests, QSBS | Removes from taxable estate; perpetual compounding; PPLI death benefit is income-tax-free + estate-tax-free |
+
+**Basis step-up hierarchy (critical for estate planning):**
+- Taxable accounts: assets get a **step-up to fair market value at death** → heirs sell with zero capital gain. Hold appreciated long-term positions here.
+- Traditional IRAs / 401(k)s: **NO step-up** — heirs pay ordinary income tax on every dollar withdrawn (income in respect of a decedent). Do not treat these as equivalent to taxable accounts for estate purposes.
+- Roth IRAs: **no step-up needed** — already tax-free; heirs inherit and withdraw tax-free.
+- PPLI death benefit (§101a): **income-tax-free entirely** — superior to the basis step-up because the full compounded cash value (decades of untaxed growth) transfers without any income tax event.
+- **Implication:** Hold the most tax-efficient long-term positions in taxable for the basis step-up; hold HFT gains in PPLI; hold highest-return assets in Roth.
 
 ## Entity flow (simplified)
 
@@ -173,19 +247,40 @@ Trading LP/LLC (Form 1065)
 
 ---
 
-## Implementation path (for the human professionals, not self-serve)
+## Implementation path (attorney + CPA + PPLI specialist execute; timeline matters)
+
+**Immediate (before entity formation):**
+- **Disability insurance:** Begin underwriting for own-occupation policies for each partner NOW — before PPLI underwriting, before any health events surface. Schedule medical exams to also serve PPLI underwriting. This is the most time-sensitive non-tax item.
+- **Annual gift exclusion:** Begin $19K/person/yr gifts immediately — no entities required. No planning lag. Write the checks.
+
+**Phase 1 — Entity formation (execute together, clock-sensitive):**
 1. **Engage** trader-tax CPA + tax attorney + PPLI specialist / IDF manager.
-2. **Form** Trading LP/LLC (WY/DE/NV) + one S-corp per partner (or shared); draft partnership agreement with allocation provisions and management fee terms.
+2. **Form** Trading LP/LLC (**Wyoming** domicile for charging-order protection) + one S-corp per partner; draft partnership agreement with allocation provisions and management fee terms.
 3. **File elections on the clock:**
-   - §475(f) internal resolution within **75 days** of Trading LP formation (dated, signed, filed in entity records — no IRS filing needed)
+   - §475(f) internal resolution within **75 days** of Trading LP formation (dated, signed, filed in entity records — no IRS filing needed at formation; existing entities face March 15 deadline)
    - S-corp elections (Form 2553) for each management S-corp
    - PTET elections where applicable
 4. **Set reasonable W-2 salaries** in each management S-corp ($150–400K range); run payroll.
-5. **Stand up** 401(k) + cash-balance plans through each S-corp; execute mega-backdoor Roth conversions.
-6. **Employ minor children** through S-corp if applicable; document duties, set arm's-length compensation, open custodial Roth IRAs.
-7. **Structure & underwrite** PPLI/IDF with an independent manager; fund the insurance sleeve.
-8. **Layer** charitable/estate vehicles (CRT/DAF/dynasty trusts owning PPLI policies).
-9. **Document** TTS (trade logs, hours, frequency), management fees, and economic substance — contemporaneously, every year.
+
+**Phase 2 — Retirement stack (before year-end):**
+5. **Check existing traditional IRA balances** for each partner; eliminate pre-tax IRA balances (roll to 401(k) or strategic conversion) before initiating backdoor Roth. Pro-rata rule makes backdoor Roth partially taxable if pre-tax IRAs exist.
+6. **Stand up** 401(k) + cash-balance/DB plans through each S-corp; execute mega-backdoor Roth conversions annually.
+7. **Employ minor children** through S-corp if applicable; document duties, set arm's-length compensation, open custodial Roth IRAs.
+8. **Open 529 plans** per beneficiary; superfund up to $90K/child ($180K with spouse) in year one. Starts 15-year Roth rollover clock.
+
+**Phase 3 — Insurance wrapper (requires underwriting, takes 60–120 days):**
+9. **Structure & underwrite** PPLI/IDF with an independent IDF manager (not the partners); fund the insurance sleeve. Establish written **PPLI loan management protocol** before taking any policy loans (max loan-to-cash-value ≤75–80%; annual review).
+
+**Phase 4 — Estate & protection (attorney-led; do not defer):**
+10. **Establish South Dakota dynasty trust(s)** with SD corporate trustee; trust owns PPLI policies (moves death benefit outside taxable estate).
+11. **Execute SLAT and/or IDGT** to lock in $15M/person exemption — do not wait; exemption may sunset. Attorney coordinates valuation discounts on LP interest transfers and timely qualified appraisals.
+12. **Establish South Dakota DAPT** for each partner before any creditor exposure materializes.
+13. **Layer** charitable vehicles (CRT/DAF/CLAT) if philanthropically motivated.
+
+**Ongoing (annual):**
+14. **Document** TTS (trade logs, hours, frequency), management fees, and economic substance — contemporaneously, every year.
+15. **§817(h) diversification testing, TTS substantiation, nexus/domicile confirmation** — attorney + CPA review annually.
+16. **Asset location review** — confirm HFT gains routed to PPLI, stable assets in pre-tax, highest-return positions in Roth.
 
 ## Verification / testing (how you confirm it works)
 - **Pre-mortem modeling:** have the CPA build a side-by-side effective-tax-rate model — *status quo* vs. *proposed* — across a representative trade mix, showing the marginal contribution of (a) 475/1256 split, (b) qualified plans, (c) PPLI inside buildup, (d) charitable.
