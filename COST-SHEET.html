@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WHAT THIS COSTS — SIMPLE WORDS</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Mono:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cave:#191512;
+  --cave-2:#211c17;
+  --stone:#2b251f;
+  --stone-edge:#3a322a;
+  --bone:#e9ddc8;
+  --bone-dim:#b8aa8f;
+  --ochre:#d97b29;
+  --ochre-hot:#f0993f;
+  --blood:#b5482e;
+  --blood-hot:#e06a4b;
+  --moss:#8a9b4e;
+  --moss-hot:#a9bd63;
+  --ash:#6e6354;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  background:var(--cave);
+  color:var(--bone);
+  font-family:'Atkinson Hyperlegible',Georgia,serif;
+  font-size:17px;
+  line-height:1.55;
+  overflow-x:hidden;
+}
+body::before{
+  content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
+  background:
+    radial-gradient(ellipse 900px 600px at 25% -5%, rgba(181,72,46,.10), transparent 60%),
+    radial-gradient(ellipse 700px 500px at 90% 100%, rgba(240,153,63,.07), transparent 60%);
+}
+body::after{
+  content:"";position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.5;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+.sheet{position:relative;z-index:1;max-width:880px;margin:0 auto;padding:56px 28px 64px}
+
+/* ---------- header ---------- */
+.masthead{text-align:center;margin-bottom:14px}
+.masthead .tag{
+  display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:700;
+  letter-spacing:.22em;text-transform:uppercase;color:var(--blood-hot);
+  border:1.5px solid var(--blood);border-radius:2px;padding:6px 14px;
+  transform:rotate(-1.2deg);
+  animation:drop .6s cubic-bezier(.2,1.4,.4,1) both;
+}
+h1{
+  font-family:'Alfa Slab One',serif;font-weight:400;
+  font-size:clamp(40px,8vw,78px);line-height:.98;letter-spacing:.01em;
+  margin:22px 0 10px;color:var(--bone);
+  text-shadow:4px 4px 0 rgba(0,0,0,.45);
+  animation:drop .7s .08s cubic-bezier(.2,1.4,.4,1) both;
+}
+h1 .fire{color:var(--blood-hot)}
+.subtitle{
+  font-size:19px;color:var(--bone-dim);max-width:560px;margin:0 auto;
+  animation:fade .8s .25s both;
+}
+.subtitle strong{color:var(--bone)}
+
+/* ---------- cost strip ---------- */
+.problem{
+  display:flex;flex-wrap:wrap;gap:0;justify-content:center;align-items:stretch;
+  margin:42px 0 8px;animation:fade .8s .35s both;
+}
+.prob-cell{
+  flex:1;min-width:180px;text-align:center;padding:22px 16px;
+  border-top:3px solid var(--stone-edge);border-bottom:3px solid var(--stone-edge);
+}
+.prob-cell + .prob-cell{border-left:1.5px dashed var(--stone-edge)}
+.prob-cell .big{
+  font-family:'Alfa Slab One',serif;font-size:clamp(28px,4.5vw,42px);line-height:1;
+  display:block;margin-bottom:6px;
+}
+.prob-cell .lbl{font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--ash)}
+.prob-cell .sub{font-size:13px;color:var(--ash);margin-top:4px}
+.c-bone{color:var(--bone)} .c-blood{color:var(--blood-hot)} .c-ochre{color:var(--ochre-hot)} .c-moss{color:var(--moss-hot)}
+.arrowline{text-align:center;margin:16px 0 4px;color:var(--ash);font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:.1em}
+
+/* ---------- section heads ---------- */
+.sect{margin-top:58px}
+.sect-head{display:flex;align-items:baseline;gap:14px;margin-bottom:24px}
+.sect-head .num{
+  font-family:'Alfa Slab One',serif;font-size:15px;color:var(--cave);
+  background:var(--ochre);min-width:34px;height:34px;border-radius:50%;
+  display:inline-flex;align-items:center;justify-content:center;
+  transform:rotate(-4deg);box-shadow:2px 2px 0 rgba(0,0,0,.4);
+}
+.sect-head h2{
+  font-family:'Alfa Slab One',serif;font-weight:400;font-size:clamp(24px,4vw,34px);
+  letter-spacing:.01em;color:var(--bone);
+}
+.sect-head h2 mark{
+  background:linear-gradient(transparent 58%, rgba(181,72,46,.40) 58%);
+  color:var(--bone);padding:0 2px;
+}
+
+/* ---------- tablets ---------- */
+.tablets{display:grid;grid-template-columns:repeat(auto-fit,minmax(245px,1fr));gap:18px}
+.tablet{
+  background:linear-gradient(160deg,var(--stone),var(--cave-2));
+  border:1.5px solid var(--stone-edge);
+  border-radius:14px 18px 12px 16px;
+  padding:24px 22px 22px;position:relative;
+  box-shadow:0 10px 24px -12px rgba(0,0,0,.7), inset 0 1px 0 rgba(233,221,200,.06);
+  transition:transform .25s ease, border-color .25s ease;
+}
+.tablet:hover{transform:translateY(-4px) rotate(-.3deg);border-color:var(--ochre)}
+.tablet .glyph{font-size:30px;display:block;margin-bottom:12px;filter:drop-shadow(2px 2px 0 rgba(0,0,0,.4))}
+.tablet h3{font-family:'Alfa Slab One',serif;font-weight:400;font-size:18.5px;line-height:1.25;color:var(--ochre-hot);margin-bottom:10px;letter-spacing:.01em;}
+.tablet p{font-size:15.5px;color:var(--bone-dim)}
+.tablet p strong{color:var(--bone)}
+.tablet .stamp{
+  position:absolute;top:14px;right:14px;font-family:'IBM Plex Mono',monospace;
+  font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--cave);background:var(--moss);padding:3px 8px;border-radius:2px;transform:rotate(3deg);
+}
+.stamp.hot{background:var(--ochre-hot)}
+.stamp.blood{background:var(--blood-hot)}
+
+/* ---------- breakdown table ---------- */
+.costs{width:100%;border-collapse:collapse;font-size:15px}
+.costs th{
+  font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--ash);text-align:left;padding:0 12px 12px;border-bottom:2.5px solid var(--stone-edge);
+}
+.costs th:not(:first-child){text-align:right}
+.costs td{padding:14px 12px;border-bottom:1px dashed var(--stone-edge);vertical-align:middle}
+.costs tr:last-child td{border-bottom:none}
+.costs tr.subtotal td{border-top:2px solid var(--stone-edge);border-bottom:2px solid var(--stone-edge);background:rgba(43,37,31,.6)}
+.costs tr.total-row td{background:rgba(43,37,31,.9);border-top:3px solid var(--ochre);border-bottom:none}
+.costs .item{color:var(--bone-dim);font-size:15px}
+.costs .item strong{color:var(--bone)}
+.costs .num-cell{font-family:'IBM Plex Mono',monospace;font-weight:700;text-align:right;white-space:nowrap}
+.costs .y1{color:var(--blood-hot)}
+.costs .y3{color:var(--ochre-hot)}
+.costs .y5{color:var(--moss-hot)}
+.costs .total-row .item{font-family:'Alfa Slab One',serif;font-size:17px;color:var(--bone)}
+.costs .total-row .num-cell{font-size:18px}
+.costs .note-row td{padding:8px 12px;font-size:13px;color:var(--ash);font-style:italic;border-bottom:none}
+
+/* ---------- ROI bars ---------- */
+.roi-wrap{display:flex;flex-direction:column;gap:28px;margin-top:8px}
+.roi-row{display:flex;flex-direction:column;gap:8px}
+.roi-label{font-family:'Alfa Slab One',serif;font-size:16px;color:var(--bone);margin-bottom:2px}
+.roi-bars{display:flex;flex-direction:column;gap:6px}
+.bar-wrap{display:flex;align-items:center;gap:12px}
+.bar-track{flex:1;background:rgba(58,50,42,.5);border-radius:4px;height:28px;overflow:hidden;position:relative}
+.bar-fill{height:100%;border-radius:4px;display:flex;align-items:center;padding-left:10px;
+  font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:700;letter-spacing:.08em;
+  white-space:nowrap;transition:width .8s ease;min-width:60px}
+.bar-spend{background:linear-gradient(90deg,var(--blood),#d45a3a)}
+.bar-save{background:linear-gradient(90deg,#5a7a2e,var(--moss-hot))}
+.bar-label{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--ash);width:52px;text-align:right;flex-shrink:0}
+.roi-verdict{
+  margin-top:10px;display:inline-block;
+  font-family:'Alfa Slab One',serif;font-size:22px;color:var(--moss-hot);
+  background:rgba(90,122,46,.12);border:1.5px solid rgba(90,122,46,.35);
+  border-radius:10px;padding:10px 20px;letter-spacing:.02em;
+}
+
+/* ---------- ppli truth box ---------- */
+.truth-box{
+  background:linear-gradient(160deg,rgba(43,37,31,.9),rgba(33,28,23,.95));
+  border:1.5px solid var(--ochre);border-radius:16px;padding:28px 28px 24px;
+  margin-top:0;
+}
+.truth-box .headline{
+  font-family:'Alfa Slab One',serif;font-size:clamp(18px,3vw,24px);color:var(--ochre-hot);
+  margin-bottom:16px;letter-spacing:.01em;
+}
+.truth-table{width:100%;border-collapse:collapse;font-size:14.5px;margin-top:12px}
+.truth-table th{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--ash);padding:0 10px 10px;text-align:right;border-bottom:1.5px solid var(--stone-edge)}
+.truth-table th:first-child{text-align:left}
+.truth-table td{padding:12px 10px;border-bottom:1px dashed var(--stone-edge);vertical-align:middle}
+.truth-table tr:last-child td{border-bottom:none}
+.truth-table td:not(:first-child){text-align:right;font-family:'IBM Plex Mono',monospace;font-weight:700}
+.truth-table .trow-label{color:var(--bone-dim)}
+.t-blood{color:var(--blood-hot)} .t-ochre{color:var(--ochre-hot)} .t-moss{color:var(--moss-hot)}
+
+/* ---------- one rule ---------- */
+.onerule{
+  margin-top:58px;text-align:center;border-top:3px solid var(--stone-edge);
+  border-bottom:3px solid var(--stone-edge);padding:34px 18px;
+}
+.onerule h2{font-family:'Alfa Slab One',serif;font-weight:400;font-size:clamp(24px,4vw,36px);color:var(--bone);margin-bottom:12px}
+.onerule p{max-width:640px;margin:0 auto;color:var(--bone-dim);font-size:16.5px}
+.onerule p strong{color:var(--ochre-hot)}
+
+/* ---------- footer ---------- */
+footer{margin-top:44px;text-align:center;color:var(--ash);font-size:12.5px;line-height:1.7}
+footer .mono{font-family:'IBM Plex Mono',monospace;letter-spacing:.08em}
+
+@keyframes drop{from{opacity:0;transform:translateY(-18px) rotate(-1.2deg)}to{opacity:1;transform:translateY(0) rotate(-1.2deg)}}
+h1{animation-name:dropH}
+@keyframes dropH{from{opacity:0;transform:translateY(-18px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fade{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.sect{animation:fade .7s both}
+
+@media print{
+  body{background:#fff;color:#1a1510;font-size:12px}
+  body::before,body::after{display:none}
+  .tablet,.truth-box{box-shadow:none;background:#fff;border-color:#bbb}
+  h1{text-shadow:none}
+}
+@media(max-width:560px){
+  .prob-cell{min-width:140px}
+  .bar-label{display:none}
+}
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <!-- MASTHEAD -->
+  <header class="masthead">
+    <span class="tag">🪨 Cost Sheet · Per Partner · Simple Words</span>
+    <h1>WHAT THIS<br><span class="fire">COSTS.</span></h1>
+    <p class="subtitle">Per partner. Per year. Real numbers. <strong>No surprises.</strong></p>
+  </header>
+
+  <!-- COST STRIP -->
+  <div class="problem">
+    <div class="prob-cell">
+      <span class="big c-blood">~$300K</span>
+      <span class="lbl">Year 1–2</span>
+      <p class="sub">Getting started</p>
+    </div>
+    <div class="prob-cell">
+      <span class="big c-ochre">~$600K</span>
+      <span class="lbl">Year 3–5</span>
+      <p class="sub">PPLI growing</p>
+    </div>
+    <div class="prob-cell">
+      <span class="big c-moss">~$1M</span>
+      <span class="lbl">Year 5+</span>
+      <p class="sub">Full stack running</p>
+    </div>
+  </div>
+  <p class="arrowline">▲ cost goes up because YOUR PROTECTED MONEY grows — that is the good problem ▲</p>
+
+  <!-- TWO BUCKETS -->
+  <section class="sect">
+    <div class="sect-head"><span class="num">2</span><h2>Two <mark>Buckets</mark></h2></div>
+    <div class="tablets">
+
+      <div class="tablet">
+        <span class="stamp">Flat</span>
+        <span class="glyph">🪨</span>
+        <h3>Fixed costs — stays ~$200–370K/yr</h3>
+        <p>CPA team, attorney, retirement plan admin, disability insurance, valuations, family office coordination. <strong>Doesn't change much as wealth grows.</strong> This is the boring baseline cost of running everything properly.</p>
+      </div>
+
+      <div class="tablet">
+        <span class="stamp hot">Grows</span>
+        <span class="glyph">🌊</span>
+        <h3>PPLI management fee — grows with your money</h3>
+        <p>About <strong>1.25% of your policy assets per year</strong>. Year 1: small. Year 5: bigger. Year 10: large — but so is the tax-free pool it's managing. <strong>Paying 1.25% to avoid 40.8% is the best trade available.</strong></p>
+      </div>
+
+      <div class="tablet">
+        <span class="stamp">Note</span>
+        <span class="glyph">💸</span>
+        <h3>Most of this is deductible</h3>
+        <p>CPA fees, attorney fees, family office costs, retirement plan admin — all deductible through your S-corp as ordinary business expenses. <strong>The after-tax net cost is ~40% lower</strong> than the gross numbers above. Real cost: ~$180K (Year 1) → ~$600K (Year 5+).</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- BREAKDOWN TABLE -->
+  <section class="sect">
+    <div class="sect-head"><span class="num">$</span><h2>Every <mark>Line Item</mark></h2></div>
+    <p style="color:var(--bone-dim);margin-bottom:20px;font-size:15.5px">Per partner, per year. Midpoint of market-rate ranges at top-tier firms that actually know how to do this.</p>
+
+    <table class="costs">
+      <thead>
+        <tr>
+          <th>What it pays for</th>
+          <th>Year 1–2</th>
+          <th>Year 3–5</th>
+          <th>Year 5+</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <tr>
+          <td class="item"><strong>CPA — all your tax returns</strong><br><span style="font-size:13px;color:var(--ash)">Your 1040, S-corp return, gift returns (709), trust returns, share of LP filing</span></td>
+          <td class="num-cell y1">$53K</td>
+          <td class="num-cell y3">$63K</td>
+          <td class="num-cell y5">$75K</td>
+        </tr>
+
+        <tr>
+          <td class="item"><strong>Attorney — ongoing legal</strong><br><span style="font-size:13px;color:var(--ash)">Trust admin, estate plan review, LP updates, PPLI compliance opinions, election filings</span></td>
+          <td class="num-cell y1">$56K</td>
+          <td class="num-cell y3">$90K</td>
+          <td class="num-cell y5">$120K</td>
+        </tr>
+
+        <tr>
+          <td class="item"><strong>Retirement plan admin</strong><br><span style="font-size:13px;color:var(--ash)">TPA + actuary for your DB/cash-balance plan, 401(k), Form 5500, ERISA review</span></td>
+          <td class="num-cell y1">$18K</td>
+          <td class="num-cell y3">$20K</td>
+          <td class="num-cell y5">$22K</td>
+        </tr>
+
+        <tr>
+          <td class="item"><strong>Disability insurance premium</strong><br><span style="font-size:13px;color:var(--ash)">Own-occupation + BOE. Deductible through S-corp. Protects your income if you can't trade.</span></td>
+          <td class="num-cell y1">$32K</td>
+          <td class="num-cell y3">$32K</td>
+          <td class="num-cell y5">$33K</td>
+        </tr>
+
+        <tr>
+          <td class="item"><strong>Valuations + appraisals</strong><br><span style="font-size:13px;color:var(--ash)">Annual qualified appraisal of LP interests for gift/estate discounts. Required for the 35% discount strategy.</span></td>
+          <td class="num-cell y1">$9K</td>
+          <td class="num-cell y3">$11K</td>
+          <td class="num-cell y5">$13K</td>
+        </tr>
+
+        <tr>
+          <td class="item"><strong>Family office coordination</strong><br><span style="font-size:13px;color:var(--ash)">Fractional CFO, financial reporting platform, consolidation across all entities</span></td>
+          <td class="num-cell y1">$55K</td>
+          <td class="num-cell y3">$75K</td>
+          <td class="num-cell y5">$100K</td>
+        </tr>
+
+        <tr class="subtotal">
+          <td class="item"><strong>Fixed subtotal</strong><br><span style="font-size:13px;color:var(--ash)">Everything above. Doesn't grow much. This is the floor.</span></td>
+          <td class="num-cell y1">$223K</td>
+          <td class="num-cell y3">$291K</td>
+          <td class="num-cell y5">$363K</td>
+        </tr>
+
+        <tr>
+          <td class="item"><strong>PPLI/IDF management fee</strong><br><span style="font-size:13px;color:var(--ash)">~1.25% of your policy assets/yr. Grows as the tax-free pool grows. See the truth table below.</span></td>
+          <td class="num-cell y1">$63K</td>
+          <td class="num-cell y3">$313K</td>
+          <td class="num-cell y5">$625K</td>
+        </tr>
+
+        <tr class="total-row">
+          <td class="item">TOTAL per partner / year</td>
+          <td class="num-cell y1">~$286K</td>
+          <td class="num-cell y3">~$604K</td>
+          <td class="num-cell y5">~$988K</td>
+        </tr>
+
+        <tr class="note-row">
+          <td colspan="4">After-tax (most costs deductible through S-corp at ~40.8%): <strong style="color:var(--bone)">~$169K · ~$357K · ~$584K</strong> real after-tax cost</td>
+        </tr>
+
+      </tbody>
+    </table>
+
+    <div style="margin-top:14px;background:var(--stone);border:1px dashed var(--stone-edge);border-radius:10px;padding:14px 18px;font-size:14px;color:var(--bone-dim)">
+      <strong style="color:var(--bone)">PPLI fee assumption:</strong> Policy AUM of ~$5M (Year 1) → ~$25M (Year 3) → ~$50M (Year 5+) per partner. Actual fee scales with your specific policy size and IDF manager agreement. Lower AUM = lower fee; higher AUM = higher fee but far more tax saved inside.
+    </div>
+  </section>
+
+  <!-- ROI BARS -->
+  <section class="sect">
+    <div class="sect-head"><span class="num">⚖️</span><h2>What You <mark>Spend vs Save</mark></h2></div>
+    <p style="color:var(--bone-dim);margin-bottom:28px;font-size:15.5px">Per partner, per year. Red = what you pay. Green = what you keep that you would have lost.</p>
+
+    <div class="roi-wrap">
+
+      <div class="roi-row">
+        <div class="roi-label">Year 1 — base structure only</div>
+        <div class="roi-bars">
+          <div class="bar-wrap">
+            <div class="bar-label" style="color:var(--blood-hot)">SPEND</div>
+            <div class="bar-track"><div class="bar-fill bar-spend" style="width:14%">$286K</div></div>
+          </div>
+          <div class="bar-wrap">
+            <div class="bar-label" style="color:var(--moss-hot)">SAVE</div>
+            <div class="bar-track"><div class="bar-fill bar-save" style="width:30%">$350–825K</div></div>
+          </div>
+        </div>
+        <div class="roi-verdict">~1:1 to 3:1 return</div>
+      </div>
+
+      <div class="roi-row">
+        <div class="roi-label">Year 1 — with oil &amp; gas / real estate placements</div>
+        <div class="roi-bars">
+          <div class="bar-wrap">
+            <div class="bar-label" style="color:var(--blood-hot)">SPEND</div>
+            <div class="bar-track"><div class="bar-fill bar-spend" style="width:14%">$286K</div></div>
+          </div>
+          <div class="bar-wrap">
+            <div class="bar-label" style="color:var(--moss-hot)">SAVE</div>
+            <div class="bar-track"><div class="bar-fill bar-save" style="width:86%">~$1.75M</div></div>
+          </div>
+        </div>
+        <div class="roi-verdict">~6:1 return</div>
+      </div>
+
+      <div class="roi-row">
+        <div class="roi-label">Year 5 — PPLI compounding</div>
+        <div class="roi-bars">
+          <div class="bar-wrap">
+            <div class="bar-label" style="color:var(--blood-hot)">SPEND</div>
+            <div class="bar-track"><div class="bar-fill bar-spend" style="width:19%">$604K</div></div>
+          </div>
+          <div class="bar-wrap">
+            <div class="bar-label" style="color:var(--moss-hot)">SAVE</div>
+            <div class="bar-track"><div class="bar-fill bar-save" style="width:100%">~$3.2M</div></div>
+          </div>
+        </div>
+        <div class="roi-verdict">~5:1 return</div>
+      </div>
+
+      <div class="roi-row">
+        <div class="roi-label">Year 10 — full stack</div>
+        <div class="roi-bars">
+          <div class="bar-wrap">
+            <div class="bar-label" style="color:var(--blood-hot)">SPEND</div>
+            <div class="bar-track"><div class="bar-fill bar-spend" style="width:19%">~$988K</div></div>
+          </div>
+          <div class="bar-wrap">
+            <div class="bar-label" style="color:var(--moss-hot)">SAVE</div>
+            <div class="bar-track"><div class="bar-fill bar-save" style="width:100%">~$5M+</div></div>
+          </div>
+        </div>
+        <div class="roi-verdict">~5:1 return every year</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PPLI TRUTH TABLE -->
+  <section class="sect">
+    <div class="sect-head"><span class="num">♾️</span><h2>The PPLI Fee <mark>Truth</mark></h2></div>
+    <p style="color:var(--bone-dim);margin-bottom:20px;font-size:15.5px">The fee grows because your money grows. This is not a problem. This is the whole point.</p>
+
+    <div class="truth-box">
+      <div class="headline">You pay 1.25%. You avoid 40.8%. Every year. Forever.</div>
+      <table class="truth-table">
+        <thead>
+          <tr>
+            <th>Year</th>
+            <th>Your policy (per partner)</th>
+            <th>PPLI fee paid</th>
+            <th>Tax avoided inside</th>
+            <th>Net gain after fee</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="trow-label">Year 1</td>
+            <td class="t-blood">~$5M</td>
+            <td class="t-blood">~$63K</td>
+            <td class="t-moss">~$1M</td>
+            <td class="t-moss"><strong>~$937K ahead</strong></td>
+          </tr>
+          <tr>
+            <td class="trow-label">Year 3</td>
+            <td class="t-ochre">~$25M</td>
+            <td class="t-ochre">~$313K</td>
+            <td class="t-moss">~$5M</td>
+            <td class="t-moss"><strong>~$4.7M ahead</strong></td>
+          </tr>
+          <tr>
+            <td class="trow-label">Year 5</td>
+            <td class="t-ochre">~$50M</td>
+            <td class="t-ochre">~$625K</td>
+            <td class="t-moss">~$10M</td>
+            <td class="t-moss"><strong>~$9.4M ahead</strong></td>
+          </tr>
+          <tr>
+            <td class="trow-label">Year 10</td>
+            <td class="t-moss">~$150M+</td>
+            <td class="t-ochre">~$1.9M</td>
+            <td class="t-moss">~$30M+</td>
+            <td class="t-moss"><strong>~$28M+ ahead</strong></td>
+          </tr>
+        </tbody>
+      </table>
+      <div style="margin-top:16px;font-size:14px;color:var(--bone-dim)">
+        <em>Assumes 50%+ annual return inside the IDF (same strategy as the trading op). Tax saved = 40.8% × annual gains. The fee is 1.25% on assets that would have lost 40.8% of their gains without the wrapper.</em>
+      </div>
+    </div>
+  </section>
+
+  <!-- DON'T SHOP ON PRICE -->
+  <section class="sect">
+    <div class="sect-head"><span class="num">⚠️</span><h2>The <mark>Expensive Mistake</mark></h2></div>
+    <div class="tablets">
+
+      <div class="tablet">
+        <span class="stamp blood">Never</span>
+        <span class="glyph">🪤</span>
+        <h3>Don't shop on price</h3>
+        <p>The CPA who charges $30K instead of $80K but misses the <strong>475 election deadline</strong> just cost you $5M+ in wash-sale phantom income. The attorney who charges $20K instead of $100K but misses the PPLI investor-control doctrine <strong>loses the policy entirely</strong>. You get what you pay for — and in this structure, you pay for it once and the mistake is permanent.</p>
+      </div>
+
+      <div class="tablet">
+        <span class="stamp blood">Never</span>
+        <span class="glyph">🔥</span>
+        <h3>Don't hire generalists</h3>
+        <p>You need a <strong>trader-tax CPA</strong> — not a general practice CPA. TTS qualification, §475 elections, and mark-to-market accounting are specialties. Most CPAs have never filed a §475 election. Most estate attorneys have never structured a PPLI. <strong>Specialist cost: 2–3× general CPA. Specialist value: 100×.</strong></p>
+      </div>
+
+      <div class="tablet">
+        <span class="stamp">Good news</span>
+        <span class="glyph">✓</span>
+        <h3>You said attorney-managed</h3>
+        <p>This structure is being managed by an attorney and staff. That's the right call. The attorney <strong>coordinates the CPA, the PPLI specialist, the TPA, and the trustees</strong> — one quarterback, no gaps. The cost numbers above assume exactly this model. No one falls through the cracks.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ONE RULE -->
+  <section class="sect onerule">
+    <h2>The Number That Matters 🪨</h2>
+    <p>You spend <strong>~2–3% of your income</strong> to protect it. You keep <strong>~5× what you spend</strong> in saved taxes — every year, growing. By year 10, the structure saves <strong>more per year than most people earn in a lifetime</strong>. The cost is not the question. The question is whether the professionals execute it correctly. That's why the attorney leads.</p>
+  </section>
+
+  <footer>
+    <p class="mono">SOURCE: SAVINGS-MODEL.md · PLAN.md · ~/tax-structure</p>
+    <p>*Illustrative model: $50M/yr profit, 4 partners equal split, current law (2026). Per-partner costs are midpoints of market-rate ranges.<br>
+    Educational only — not legal, tax, or investment advice. All costs require validation against actual engagement letters and policy terms.</p>
+  </footer>
+
+</div>
+</body>
+</html>
