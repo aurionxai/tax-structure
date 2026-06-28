@@ -44,6 +44,52 @@ Because the partners already live in zero-tax states, **state planning is effect
 - **Documentation critical for solo setup:** the S-corp must have genuine, documented services provided to the Trading LP — research, risk management, administrative oversight. Solo setup with thin documentation is the most common solo-trader audit trigger.
 - **Management fee allocation — critical partnership agreement drafting:** if each partner's S-corp charges a management fee to the Trading LP and the fee is treated as a general LP operating expense, it reduces ALL partners' K-1 income proportionally (each bears 25% of every other partner's fee in a 4-partner structure). Partners are effectively subsidizing each other's S-corp deductions. The attorney must structure management fees as **guaranteed payments** under §707(c) or as charges solely against the paying partner's capital account — not as shared partnership expenses. This is a common drafting error and must be specified in the LP agreement before any fees are paid.
 
+**Entity C — IP Holding Structure (creator-owned; separate from LP profit sharing).**
+
+IP ownership and trading revenue are two separate legal relationships. One partner is the primary creator of the trading algorithm. That partner — not the Trading LP, not the partnership collectively — owns the IP. The LP uses the algorithm under a license. This distinction must be established in writing before trading begins.
+
+**Why this matters:**
+- If partners separate, the algorithm stays with the creator. The LP can be dissolved; the IP is unaffected.
+- The creator's economics = LP profit share (25%) + license fee. Other partners' economics = LP profit share only. These are independently negotiated.
+- The license fee is a **deduction for the Trading LP** (reducing all partners' K-1 income) and **income to the creator's IP entity** — effectively concentrating additional value with the creator through a legitimate, separately documented transaction.
+- Future algorithm improvements, research, and infrastructure belong to the IP entity — not automatically to the LP — unless explicitly contracted otherwise.
+
+**IP holding vehicle options:**
+
+| Vehicle | Use when |
+|---|---|
+| Creator's existing S-corp | Simplest; IP is an asset of the management company; no additional entity |
+| Dedicated IP LLC | Cleanest separation; IP LLC is wholly distinct from the management company; preferred if the algorithm is the firm's primary asset |
+| Creator's dynasty trust → IP LLC | Best long-term; IP appreciation accumulates outside the estate from day one; requires SD trust + corporate trustee coordination |
+
+**Recommended structure for this fact pattern (internal-only, never-licensed IP):** dedicated IP LLC owned by the creator (or creator's SD dynasty trust), licensing to the Trading LP under a written agreement. The IP LLC has no brokerage accounts, no trading activity, and no other partners.
+
+**Four documents required before trading begins:**
+
+1. **IP assignment agreement** — formal transfer of all pre-formation IP (the existing algorithm, codebase, research, models) from the creator personally into the IP entity. Establishes clean ownership from day zero. Without this, the creator may own the IP personally rather than through the protected entity — no asset protection, IP in the estate.
+
+2. **License agreement** — written, arm's-length agreement between the IP LLC and the Trading LP. Specifies: (a) scope of the license (exclusive to the LP, limited to trading firm's own capital); (b) royalty rate or fixed fee; (c) term and renewal; (d) what happens if a partner exits — does the license continue, at what terms, with what notice?
+
+3. **Improvements clause** — defines who owns future enhancements. If the LP funds algorithm development (data costs, engineer salaries, cloud compute), does that give the LP ownership rights in the improvements? This must be explicit. Recommended: creator retains ownership of all improvements; LP receives an expanded license covering improvements automatically; development costs paid by LP are treated as a pre-paid royalty and deducted accordingly.
+
+4. **LP agreement acknowledgment** — the Trading LP agreement explicitly recognizes the IP license as a legitimate, arm's-length LP expense. Prevents other partners from later challenging the license fee as a disguised excess distribution to the creator.
+
+**Royalty rate — must be arm's length:**
+The IRS can challenge a royalty between related parties as excessive if it artificially shifts income. The royalty must be supportable as what an unrelated HFT firm would pay to license a comparably performing algorithm. At $50M+ in annual trading profit, a meaningful royalty is easily defensible — document the economic rationale and retain the analysis in the file. The royalty does not have to equal the creator's LP percentage; it reflects the independent value of the IP license.
+
+**R&D credit (§41) — follows the development costs:**
+The §41 credit flows to whoever pays qualified research expenses (wages, contract developers, cloud compute for training/testing). If the IP LLC employs developers or pays development contractors, the IP LLC claims the credit. If the Trading LP or S-corps fund development, those entities claim it. Structure development expenditures through whichever entity benefits most from the deduction and credit — and be consistent.
+
+**S-corp ownership — each partner owns their own 100%:**
+There is no shared management S-corp. The structure is:
+- Creator → 100% of Creator S-corp + 100% of IP LLC (or trust → IP LLC)
+- Partner B → 100% of Partner B S-corp
+- Partner C → 100% of Partner C S-corp
+- Partner D → 100% of Partner D S-corp
+- All 4 partners → 25% each of Trading LP
+
+No partner owns any other partner's S-corp. Each S-corp is independent — sole owner, sole employee, sole retirement plan participant. This prevents controlled group testing from requiring all four retirement plans to test together.
+
 ### Layer 2 — Solo S-corp retirement stack (the solopreneur advantage)
 
 Because each S-corp has a single participant, the cash-balance plan is sized purely around that partner's age — no dilution across multiple participants. This is the solopreneur retirement edge.
@@ -229,22 +275,27 @@ The structure creates multiple tax "buckets." Placing the right asset in the rig
 ## Entity flow (simplified)
 
 ```
-Trading LP/LLC (Form 1065)
-│  └─ all trades, TTS, §475(f) election, zero employees
+Creator's IP LLC (or Trust → IP LLC)
+│  └─ owns algorithm · no trading · no other partners
 │
-├─ K-1 (bulk of $50M) ──────────────────────────────────────────┐
-│   NO W-2 required · NO SE tax · ordinary income               │
-│                                                                │
-└─ Management fee ──> [Partner A S-corp] [Partner B S-corp] ... │
-                       W-2 ($150–400K)   W-2 ($150–400K)        │
-                       + distributions   + distributions         │
-                       + 401k/CB plan    + 401k/CB plan          │
-                                                                 ▼
-                                                   Partners receive K-1
-                                                   → PPLI sleeve
-                                                   → Dynasty trusts
-                                                   → Retirement accounts
-                                                   → Kids' Roth IRAs
+└─ License agreement ──> Trading LP/LLC (Form 1065)
+   (royalty fee;            └─ all trades, TTS, §475(f) election, zero employees
+    deductible by LP)       └─ licensed use of algorithm only; does not own IP
+                            │
+                            ├─ K-1 (bulk of $50M) ──────────────────────────────┐
+                            │   NO W-2 required · NO SE tax · ordinary income    │
+                            │                                                    │
+                            └─ Management fee (guaranteed payment per partner)   │
+                               ──> [Creator S-corp]  [B S-corp]  [C S-corp]  [D S-corp]
+                                    W-2 · 401k/CB     W-2 · 401k  W-2 · 401k  W-2 · 401k
+                                    + license royalty
+                                    income to IP LLC
+                                                                                 ▼
+                                                               Partners receive K-1
+                                                               → PPLI sleeve
+                                                               → Dynasty trusts
+                                                               → Retirement accounts
+                                                               → Kids' Roth IRAs
 ```
 
 ---
@@ -254,7 +305,8 @@ Trading LP/LLC (Form 1065)
 - ✅ **Entity:** greenfield → clean formation, 75-day §475 window, WY/DE/NV domicile.
 - ✅ **Asset class:** 100% single-name HFT options (securities, not §1256) → §475 mandatory, ordinary rates, PPLI + Layer 5 are the rate levers.
 - ✅ **Employees:** Trading LP needs zero. W-2 only required inside each partner's management S-corp (reasonable comp $150–400K; K-1 from the LP has no W-2/SE requirement).
-- ✅ **S-corp structure:** each partner can have their own S-corp for independent retirement/salary control, or share one.
+- ✅ **S-corp structure:** each partner owns their own S-corp 100% — independent retirement/salary control, no controlled group issues.
+- ✅ **IP ownership:** one main creator owns the algorithm. IP held in creator's dedicated IP LLC (or trust → IP LLC), licensed to Trading LP under written agreement. IP and revenue are separate legal relationships.
 - ✅ **Kids' Roth:** W-2 from S-corp employment unlocks it; parent can fund the $7K contribution; limit = lesser of $7K or child's earned income.
 - ✅ **Capital source:** proprietary (own capital assumed).
 
